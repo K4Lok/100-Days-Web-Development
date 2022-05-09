@@ -1,5 +1,5 @@
 ## How does a website work?
-A user send a request to the website's server via a web browser with a URL (Uniform Resource Locator),<br/>
+> A user send a request to the website's server via a web browser with a URL (Uniform Resource Locator),<br/>
 which is the address of the website, then the server side will response and send the code of the website back to the client side.
 
 ---
