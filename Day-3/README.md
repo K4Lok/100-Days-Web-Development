@@ -9,6 +9,9 @@
 4. HTML4: `1999`
 5. HTML5: `2014`
 
+#### Inline Styles
+> It means that you assign element styles via the "style" attribute.
+
 ### #`<a>` Anchor Tag
 This is a link to [Google](https://google.com).
 
