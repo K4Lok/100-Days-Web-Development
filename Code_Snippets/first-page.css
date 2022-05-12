@@ -1,28 +1,24 @@
-h1 {
-  font-family: Georgia, 'Times New Roman', Times, serif;
+body {
   text-align: center;
-  color: rgb(36, 113, 87);
+}
+
+img {
+    width: 600px;
+    height: 100px;
+    border-radius: 5%;
+}
+
+h1 {
+  font-size: 70px;
 }
 
 p {
-  font-family: sans-serif;
-  text-align: start;
+  font-family: fantasy;
   color: rgb(52, 189, 141);
-}
-
-a {
-  color: red;
-  text-decoration: none;
-}
-
-a:hover {
-  color: violet;
-  cursor: grab;
-  text-decoration: overline underline dotted blueviolet;
 }
 
 #para-1 {
     font-family: 'Macondo';
     font-weight: bold;
-    font-size: 20px;
+    font-size: 25px;
 }
