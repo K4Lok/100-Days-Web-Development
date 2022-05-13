@@ -1,9 +1,27 @@
 h1 {
   font-size: 50px;
   text-align: start;
-  padding-bottom: 50px;
+  margin-bottom: 0;
+  padding-bottom: 5px;
+  color:rgb(91, 108, 64)
 }
 
 p {
   font-family: monospace;
+  font-size: 18px;
+  /* text-align: center !important; */
+}
+
+ul {
+  padding: 0;
+  list-style: none;
+  color: rgb(89, 126, 28);
+}
+
+li {
+  /* list-style: square; */
+  background-color:rgb(232, 244, 214);
+  border-radius: 10px;
+  padding-left: 40px;
+  margin-bottom: 10px;
 }

@@ -13,12 +13,14 @@ p {
 }
 
 a {
+  background-color:rgb(117, 198, 171);
   color: red;
+  border-radius: 5px;
   text-decoration: none;
 }
 
 a:hover {
-  color: violet;
+  color: white;
   cursor: grab;
   text-decoration: overline underline dotted blueviolet;
 }
