@@ -1,9 +1,20 @@
 h1 {
   font-size: 50px;
-  text-align: start;
+  /* text-align: start; */
   margin-bottom: 0;
   padding-bottom: 5px;
   color:rgb(91, 108, 64)
+}
+
+a {
+  font-family: cursive;
+  font-weight: bold;
+  padding: 10px 30px;
+}
+
+a:hover {
+  text-decoration: underline dashed rgb(68, 70, 64);
+  text-decoration-thickness: 3px;
 }
 
 p {
@@ -14,7 +25,10 @@ p {
 
 ul {
   padding: 0;
+  width: 50%;
   list-style: none;
+  font-size: 24px;
+  margin: 40px auto 0 auto;
   color: rgb(89, 126, 28);
 }
 
@@ -22,6 +36,26 @@ li {
   /* list-style: square; */
   background-color:rgb(232, 244, 214);
   border-radius: 10px;
-  padding-left: 40px;
+  padding: 4px 30px;
   margin-bottom: 10px;
+}
+
+h2 {
+  color: rgb(78, 13, 5);
+  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+  font-size: 28px;
+  margin: 20px 0 10px;
+}
+
+main p {
+  margin: 10px 0px 20px;
+}
+
+#description {
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  margin-bottom: 30px;
+}
+
+.highlight-goal {
+  background-color: rgb(233, 255, 202);
 }

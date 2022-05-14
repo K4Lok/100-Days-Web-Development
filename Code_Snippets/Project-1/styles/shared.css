@@ -1,6 +1,7 @@
 body {
   background-color: rgb(247, 227, 204);
   margin: 50px;
+  text-align: center;
 }
 
 h1 {
@@ -24,3 +25,10 @@ a:hover {
   cursor: grab;
   text-decoration: overline underline dotted blueviolet;
 }
+
+#para-1 {
+  font-family: 'Macondo';
+  font-weight: bold;
+  font-size: 25px;
+}
+
