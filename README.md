@@ -1,7 +1,7 @@
 # 100-Days-Web-Development
 
 | Day | Content | Notes | Finish Date |
-|-----|---------|-------|-------------|
+|-----|---------|-------|------------:|
 |Day 1|Get started with the course & create your first basic website!|[Link](https://github.com/ImK4Lok/100-Days-Web-Development/tree/main/Notes/Day-1)|8 May 2022|
 |Day 2|Set up a proper local development environment and a bit HTML|[Link](https://github.com/ImK4Lok/100-Days-Web-Development/tree/main/Notes/Day-2)|9 May 2022|
 |Day 3|Dive deeper into CSS and HTML - Styling|[Link](https://github.com/ImK4Lok/100-Days-Web-Development/tree/main/Notes/Day-3)|10 May 2022|
