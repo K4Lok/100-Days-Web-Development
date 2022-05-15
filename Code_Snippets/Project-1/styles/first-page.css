@@ -1,13 +1,39 @@
 img {
-    width: 600px;
-    height: 100px;
+    width: 180px;
+    height: 180px;
+    background:rgb(47, 72, 63);
+    border-radius: 50%;
+    border: 5px solid rgba(96, 65, 12, 0.85);
+    margin: -100px 0 0 0;
 }
 
 h1 {
-  font-size: 70px;
+  font-family: "Fira Sans", sans-serif;
+  font-size: 45px;
+}
+
+h2 {
+  font-family: 'Oswald', sans-serif;
+  font-weight: bold;
+  font-size: 24px;
+  color: rgb(52, 189, 141);
 }
 
 p {
-  font-family: fantasy;
-  color: rgb(52, 189, 141);
+  font-family: "Fira Sans", sans-serif;
+}
+
+a {
+  padding: 10px;
+}
+
+.main-card {
+  /* display: block; */
+  background: rgba(232, 244, 214, 1);
+  border: 5px solid rgb(49, 97, 40);
+  border-radius: 8px;
+  margin: 150px auto 50px auto;
+  width: 50%;
+  padding: 0 20px 20px 20px;
+  box-shadow: 1px 2px 8px rgba(0, 0, 0, 0.2);
 }
