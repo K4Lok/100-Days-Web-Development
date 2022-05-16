@@ -1,0 +1,98 @@
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color:rgb(244, 234, 255);
+}
+
+h1 {
+    font-size: 52px;
+    color: rgb(88, 49, 196);
+}
+
+.main-content-wrapper {
+    /* margin: 40px auto 0 auto; */
+    padding: 30px;
+    text-align: center;
+}
+
+.icon {
+    max-width: 250px;
+}
+
+.main-card {
+    margin: 20px auto 0 auto;
+    text-align: start;
+    width: 700px;
+    border: 1px solid violet;
+    border-radius: 6px;
+    background: rgb(122, 74, 218);
+    padding: 32px;
+    color: rgb(248, 241, 255);
+}
+
+.main-card p{
+    font-size: 16px;
+}
+
+.main-card .card-header {
+    font-weight: bold;
+    font-size: 22px;
+}
+
+.main-card ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.main-card li {
+    margin: 14px 0;
+    padding-left: 10px;
+    border-left: 5px solid transparent;
+}
+
+.main-card .highlighted-item {
+    border-left: 5px solid rgb(247, 209, 85);
+    color:rgb(255, 237, 177);
+}
+
+.bold {
+    font-weight: bold;
+}
+
+.highlighted-anchor {
+    border-radius: 4px;
+    text-decoration: none;
+    color: rgb(36, 3, 102);
+    background-color: rgb(255, 237, 177);
+    padding: 2px 6px;
+}
+
+.highlighted-anchor:hover,
+.highlighted-anchor:active {
+    background-color: rgb(250, 201, 39);
+}
+
+.download-pdf {
+    display: inline-block;
+    margin-top: 25px;
+    margin-bottom: 10px;
+    padding: 6px 10px;
+    background: rgb(255, 237, 177);
+    border: 1px solid transparent;
+    border-radius: 5px;
+    text-decoration: none;
+    color: black;
+}
+
+.download-pdf:hover,
+.download-pdf:active {
+    border: 1px solid rgb(233, 193, 119);
+    background: rgb(252, 225, 136);
+}
+
+
+.my-name {
+    margin: 0;
+    font-size: 14px;
+    color: rgb(131, 113, 149);
+}
