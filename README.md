@@ -11,6 +11,7 @@
 |Day 7|CSS Box Model and Class|[Link](https://github.com/ImK4Lok/100-Days-Web-Development/tree/main/Notes/Day-7)|14 May 2022|
 |Day 8|Inline vs Block element and Margin Collapsing|[Link](https://github.com/ImK4Lok/100-Days-Web-Development/tree/main/Notes/Day-8)|15 May 2022|
 |Day 9|Finish Task 1 to solidate previous knowledge|[Link](https://github.com/ImK4Lok/100-Days-Web-Development/tree/main/Notes/Day-9)|16 May 2022|
-|Day 10|Favicon and Introduction of Git|[Link](https://github.com/ImK4Lok/100-Days-Web-Development/tree/main/Notes/Day-9)|17 May 2022|
+|Day 10|Website Favicon and Introduction of Git|[Link](https://github.com/ImK4Lok/100-Days-Web-Development/tree/main/Notes/Day-10)|17 May 2022|
+|Day 11|Basic Concepts and Operations of Git|[Link](https://github.com/ImK4Lok/100-Days-Web-Development/tree/main/Notes/Day-11)|18 May 2022|
 
 <!-- |Day | |[Link](https://github.com/ImK4Lok/100-Days-Web-Development/tree/main/Notes/Day-8)| May 2022| -->
