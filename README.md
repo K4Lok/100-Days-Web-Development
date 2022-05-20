@@ -14,5 +14,6 @@
 |Day 10|Website Favicon and Introduction of Git|[Link](https://github.com/ImK4Lok/100-Days-Web-Development/tree/main/Notes/Day-10)|17 May 2022|
 |Day 11|Basic Concepts and Operations of Git|[Link](https://github.com/ImK4Lok/100-Days-Web-Development/tree/main/Notes/Day-11)|18 May 2022|
 |Day 12|Git Operation: Branch, Merge, Delete, Revert|[Link](https://github.com/ImK4Lok/100-Days-Web-Development/tree/main/Notes/Day-12)|19 May 2022|
+|Day 13|Git Concept: Clone, Collaboration, Contributing|[Link](https://github.com/ImK4Lok/100-Days-Web-Development/tree/main/Notes/Day-13)|20 May 2022|
 
 <!-- |Day | |[Link](https://github.com/ImK4Lok/100-Days-Web-Development/tree/main/Notes/Day-)| May 2022| -->
