@@ -18,6 +18,8 @@
 ### Main Content
 > The main content div are layout with property `display: grid;` learn from this [video](https://www.youtube.com/watch?v=jV8B24rSN5o&t=318s).
 
+> Also from this [sample](https://codepen.io/rickyeckhardt/pen/oNXeoZp?editors=1100).
+
 
 ### Table
 > Table are learn from the [w3schools](https://www.w3schools.com/html/html_tables.asp).
