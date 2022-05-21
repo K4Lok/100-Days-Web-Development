@@ -39,7 +39,7 @@
 > With the `<section>` tag, it can wrap out a section of code and increasing the readibility, easier to maintain the codes.
 ---
 
-## Showcase -- ([Task-1](/Code_Snippets/Task-1/index.html))
+## Showcase -- ([Task-1](/Code_Snippets/Task-1))
 ### Index.html
 <img alt="index.html" src="/Code_Snippets/Task-1/showcase/index.png" />
 
