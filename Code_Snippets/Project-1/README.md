@@ -1,4 +1,4 @@
-## Showcase -- ([Project-1](/Code_Snippets/Project-1/index.html))
+## Showcase -- ([Project-1](/Code_Snippets/Project-1))
 ### Index.html
 <img alt="index.html" src="/Code_Snippets/Project-1/showcase/index.png" />
 
