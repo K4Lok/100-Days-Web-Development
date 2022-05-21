@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Book Info Editor</title>
+    <link rel="stylesheet" href="styles/style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inconsolata:wght@500&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div class="container">
+      <div class="header">
+        <h1>Book Editing System</h1>
+      </div>
+      <div class="button-nav">
+        <div class="button-group-left">
+          <input type="radio" id="add" name="button-group-left" checked="checked"/>
+          <label for="add">ADD</label>
+          <input type="radio" id="delete" name="button-group-left" />
+          <label for="delete">DELETE</label>
+          <input type="radio" id="update" name="button-group-left" />
+          <label for="update">UPDATE</label>
+        </div>
+        <div class="button-group-right">
+          <!-- <input type="radio" id="exist-list" name="button-group-right">
+          <label for="exist-list">EXIST LIST</label> -->
+          <input type="button" id="checkbox_id" style="display:none;">
+          <label for="checkbox_id">EXIST LIST</label>
+        </div>
+      </div>
+      <div class="main-content">
+        <section class="left-grid">
+          <div class="tab tab-add">
+            <h2>You can add new book list here.</h2>
+            <form>
+              <div class="set">
+                <div class="book-id">
+                  <label for="book-id">Book ID</label>
+                  <input id="book-id" placeholder="Ex: xxx" type="text" />
+                </div>
+              </div>
+              <div class="set">
+                <div class="book-title">
+                  <label for="book-title">Book Title</label>
+                  <input id="book-title" placeholder="Title of the Book" type="text"/>
+                </div>
+              </div>
+              <div class="set">
+                <div class="author">
+                  <label for="author">Author Name</label>
+                  <input id="author" placeholder="Author's Name" type="text" />
+                </div>
+                <div class="year">
+                  <label for="year">Year Published</label>
+                  <input id="year" placeholder="Year Published" type="text" />
+                </div>
+              </div>
+              <div class="set">
+                <div class="genre">
+                  <label for="genre">Genre</label>
+                  <input id="genre" placeholder="Genre of the Book" type="text" />
+                  <button class="btn">CLEAR</button>
+                  <button class="btn">SUMBIT</button>
+                </div>
+              </div>
+            </form>
+          </div>
+        </section>
+        <section class="right-grid">
+          <div class="tab tab-exist">
+            <h3>Current Table</h1>
+            <table>
+              <tr>
+                <th>ID</th>
+                <th>Name</th>
+                <th>Author</th>
+                <th>Year</th>
+                <th>Genre</th>
+              </tr>
+              <tr>
+                <td>100</td>
+                <td>BOOK LOVERS</td>
+                <td>Emily Henry</td>
+                <td>2022</td>
+                <td>Fiction</td>
+              </tr>
+              <tr>
+                <td>101</td>
+                <td>IT ENDS WITH US</td>
+                <td>Colleen Hoover</td>
+                <td>2016</td>
+                <td>Fiction</td>
+              </tr>
+              <tr>
+                <td>102</td>
+                <td>22 SECONDS</td>
+                <td>James Patterson</td>
+                <td>2022</td>
+                <td>Thrillers</td>
+              </tr>
+              <tr>
+                <td>103</td>
+                <td>THE SUMMER PLACE</td>
+                <td>Jennifer Weiner</td>
+                <td>2022</td>
+                <td>Fiction</td>
+              </tr>
+              <tr>
+                <td>104</td>
+                <td>BOOK LOVERS</td>
+                <td>Emily Henry</td>
+                <td>2022</td>
+                <td>Fiction</td>
+              </tr>
+              <tr>
+                <td>105</td>
+                <td>IT ENDS WITH US</td>
+                <td>Colleen Hoover</td>
+                <td>2016</td>
+                <td>Fiction</td>
+              </tr>
+              <tr>
+                <td>106</td>
+                <td>22 SECONDS</td>
+                <td>James Patterson</td>
+                <td>2022</td>
+                <td>Thrillers</td>
+              </tr>
+              <tr>
+                <td>107</td>
+                <td>THE SUMMER PLACE</td>
+                <td>Jennifer Weiner</td>
+                <td>2022</td>
+                <td>Fiction</td>
+              </tr>
+              <tr>
+                <td>108</td>
+                <td>IT ENDS WITH US</td>
+                <td>Colleen Hoover</td>
+                <td>2016</td>
+                <td>Fiction</td>
+              </tr>
+              <tr>
+                <td>109</td>
+                <td>22 SECONDS</td>
+                <td>James Patterson</td>
+                <td>2022</td>
+                <td>Thrillers</td>
+              </tr>
+              <tr>
+                <td>110</td>
+                <td>THE SUMMER PLACE</td>
+                <td>Jennifer Weiner</td>
+                <td>2022</td>
+                <td>Fiction</td>
+              </tr>
+            </table>
+          </div>
+        </section>
+      </div>
+    </div>
+  </body>
+</html>
