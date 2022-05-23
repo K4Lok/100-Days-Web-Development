@@ -17,5 +17,6 @@
 |Day 13|Git Concept: Clone, Collaboration, Contributing|[Link](https://github.com/ImK4Lok/100-Days-Web-Development/tree/main/Notes/Day-13)|20 May 2022|
 |Day 14|Self-Work: Layout of a Book Editing System|[Link](https://github.com/ImK4Lok/100-Days-Web-Development/tree/main/Notes/Day-14)|21 May 2022|
 |Day 15|Basic concept to CSS Flexbox|[Link](https://github.com/ImK4Lok/100-Days-Web-Development/tree/main/Notes/Day-15)|22 May 2022|
+|Day 16|Intro to CSS Document Flow and Positioning|[Link](https://github.com/ImK4Lok/100-Days-Web-Development/tree/main/Notes/Day-16)|23 May 2022|
 
 <!-- |Day | |[Link](https://github.com/ImK4Lok/100-Days-Web-Development/tree/main/Notes/Day-)| May 2022| -->
