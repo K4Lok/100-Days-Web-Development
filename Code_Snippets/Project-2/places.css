@@ -7,11 +7,21 @@ header {
     position: static;
 }
 
+#page-logo a,
+header a {
+    color: rgb(183, 230, 235);
+}
+
+header nav a:hover {
+    background-color: rgb(235, 253, 255);
+}
+
 main ul {
     width: 1200px;
-    margin: 0 auto;
+    margin: 0 auto 48px auto;
     display: grid;
-    grid-template-columns: 50% 50%;
+    grid-template-columns: 50% 50%; 
+    /* grid-template-columns: 1fr 1fr; */
     gap: 20px;
 }
 
@@ -21,6 +31,10 @@ main li {
     box-shadow: 1px 1px 4px rgba(0, 0, 0, 0.2);
     border-radius: 6px;
     overflow: hidden;
+}
+
+main li:nth-of-type(3) {
+    grid-column: 1 / span 2;
 }
 
 main li img {
@@ -34,6 +48,10 @@ main li img {
     display:flex;
     flex-direction: column;
     justify-content: space-between;
+}
+
+.item-content h2 {
+    margin: 0;
 }
 
 .actions {
