@@ -16,12 +16,19 @@
 
 ---
 
-### Image
+### To fit an Image
 #### `object-fit:`
 > The CSS `object-fit:` property is used to specify how an `<img` or `<video>` shoud be resized to fit its container.
 > 1. `fill` - This is default. If necessary, the image will be stretched or squished to fit.
 > 2. `contain` - The image keeps its aspect ratio, but is resized to fit within the given dimension. (Have white spaces)
 > 3. `cover` - The image keeps its aspecet ratio and will be clipped to fit.
+#### `height` & `width`
+> In order to size every image into a same size in a container, we need to set its `height` to a specified value
+> and `width: 100%`.
+#### `overflow: hidden`
+> When have a `border-radius` on a parent container of an image element, the image element won't automatically follow the `border-radius` property, it will overflow and display outof the container.
+
+> To fix this, need to have property `overflow: hidden` inside the container to hidden the image overflow.
 
 ---
 
