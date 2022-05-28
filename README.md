@@ -18,7 +18,7 @@
 |Day 14|Self-Work: Layout of a Book Editing System|[Link](https://github.com/ImK4Lok/100-Days-Web-Development/tree/main/Notes/Day-14)|21 May 2022|
 |Day 15|Basic concept to CSS Flexbox|[Link](https://github.com/ImK4Lok/100-Days-Web-Development/tree/main/Notes/Day-15)|22 May 2022|
 |Day 16|Intro to CSS Document Flow and Positioning|[Link](https://github.com/ImK4Lok/100-Days-Web-Development/tree/main/Notes/Day-16)|23 May 2022|
-|Day 17|% Units, Flex Container with flex-grow, flex-basis and flex-shrink|[Link](https://github.com/ImK4Lok/100-Days-Web-Development/tree/main/Notes/Day-17)|24 May 2022|
+|Day 17|Units-%, Image object-fit, Flex Container with grow, basis and shrink|[Link](https://github.com/ImK4Lok/100-Days-Web-Development/tree/main/Notes/Day-17)|24 May 2022|
 |Day 18|More on Margin Collapsing, Linear Gradient Function|[Link](https://github.com/ImK4Lok/100-Days-Web-Development/tree/main/Notes/Day-18)|25 May 2022|
 |Day 19|Introduction to CSS Grid and nth-of-type pseudo-class|[Link](https://github.com/ImK4Lok/100-Days-Web-Development/tree/main/Notes/Day-19)|26 May 2022|
 |Day 20|Finished Project-2 and Introduce Responsive Design|[Link](https://github.com/ImK4Lok/100-Days-Web-Development/tree/main/Notes/Day-20)|27 May 2022|
