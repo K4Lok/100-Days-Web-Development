@@ -24,6 +24,7 @@
 |Day 20|Finished Project-2 and Introduce Responsive Design|[Link](https://github.com/ImK4Lok/100-Days-Web-Development/tree/main/Notes/Day-20)|27 May 2022|
 |Day 21|Problems with Pixels and Intro to other Units|[Link](https://github.com/ImK4Lok/100-Days-Web-Development/tree/main/Notes/Day-21)|28 May 2022|
 |Day 22|Differences between Sizing Units and Media Query|[Link](https://github.com/ImK4Lok/100-Days-Web-Development/tree/main/Notes/Day-22)|29 May 2022|
+|Day 23|Implementing Media Query, Learn internal link & Target Selector|[Link](https://github.com/ImK4Lok/100-Days-Web-Development/tree/main/Notes/Day-23)|30 May 2022|
 
 
 <!-- |Day | |[Link](https://github.com/ImK4Lok/100-Days-Web-Development/tree/main/Notes/Day-)| May 2022| -->
