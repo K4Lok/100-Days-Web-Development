@@ -27,6 +27,7 @@
 |Day 23|Implementing Media Query, Learn internal link & Target Selector|[Link](https://github.com/ImK4Lok/100-Days-Web-Development/tree/main/Notes/Day-23)|30 May 2022|
 |Day 24|CSS Target Selector, z-index, finish Task-2|[Link](https://github.com/ImK4Lok/100-Days-Web-Development/tree/main/Notes/Day-24)|31 May 2022|
 |Day 25|CSS Variables, Transformation, Transition, SVG|[Link](https://github.com/ImK4Lok/100-Days-Web-Development/tree/main/Notes/Day-25)|1 June 2022|
+|Day 26|HTML Form attribute, Radio & Button|[Link](https://github.com/ImK4Lok/100-Days-Web-Development/tree/main/Notes/Day-26)|2 June 2022|
 
 
 <!-- |Day | |[Link](https://github.com/ImK4Lok/100-Days-Web-Development/tree/main/Notes/Day-)| May 2022| -->
