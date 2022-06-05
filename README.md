@@ -29,6 +29,7 @@
 |Day 25|CSS Variables, Transformation, Transition, SVG|[Link](https://github.com/ImK4Lok/100-Days-Web-Development/tree/main/Notes/Day-25)|1 June 2022|
 |Day 26|HTML Form attribute, Radio & Button|[Link](https://github.com/ImK4Lok/100-Days-Web-Development/tree/main/Notes/Day-26)|2 June 2022|
 |Day 27|HTML Form label & Input, Styling form and input|[Link](https://github.com/ImK4Lok/100-Days-Web-Development/tree/main/Notes/Day-27)|3 June 2022|
+|Day 28|Form Validation, Boolean Attributes, Common Attributes for inputs|[Link](https://github.com/ImK4Lok/100-Days-Web-Development/tree/main/Notes/Day-28)|4 June 2022|
 
 
 <!-- |Day | |[Link](https://github.com/ImK4Lok/100-Days-Web-Development/tree/main/Notes/Day-)| May 2022| -->
