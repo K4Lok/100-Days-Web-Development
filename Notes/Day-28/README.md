@@ -66,5 +66,6 @@ textarea {
   resize: vertical; /* Resize only along the vertical axis */
   resize: horizontal; /* Resize only along the horizontal axis */  
 }
+```
 
 ---
