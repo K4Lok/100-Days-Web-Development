@@ -49,7 +49,7 @@
 
 ### `row=`
 ```html
-<textarea name="..." id="..." required row="8"></textarea>
+<textarea name="..." id="..." required rows="8"></textarea>
 ```
 > The set the display row size of a textarea input field.
 
