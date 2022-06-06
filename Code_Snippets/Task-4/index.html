@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>My Form</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Contact Us</h1>
+    </header>
+    <div class="form-wrapper">
+        <form action="#" method="POST">
+            <section>
+                <h2>How can we help you?</h2>
+                <label class="label-style" for="user-name">Your Name</label>
+                <input type="text" class="input-style" name="user-name" id="user-name" required/>
+                
+                <label class="label-style" for="user-email">Your E-Mail Address</label>
+                <input type="email" class="input-style" name="user-email" id="user-email" required/>
+
+                <label class="label-style" for="user-number">Your Phone Number</label>
+                <input type="tel" class="input-style" name="user-number" id="user-number" required/>
+
+                <label class="label-style" for="user-message">Your Message</label>
+                <textarea class="input-style" name="user-message" id="user-message" rows="7"></textarea>
+                
+                <label class="label-style" for="find-us">How did you find us?</label>
+                <select class="input-style" name="find-us" id="find-us">
+                    <option value="search">Web Search</option>
+                    <option value="word-of-mouth">Word of Mouth</option>
+                    <option value="other">Other</option>
+                </select>
+            </section>
+            <hr/>
+            <section>
+                <h2>How should we reply?</h2>
+                <div>
+                    <input type="radio" name="email-reply" id="option-1" />
+                    <label for="option-1">Call me</label>
+                </div>
+                <div>
+                    <input type="radio" name="email-reply" id="option-2" />
+                    <label for="option-2">Send me an email</label>
+                </div>
+                <div>
+                    <input type="radio" name="email-reply" id="option-3" />
+                    <label for="option-3">Don't reply</label>
+                </div>
+                <div>
+                    <input type="checkbox" name="terms" id="terms" required/>
+                    <label for="terms">Accept Terms</label>
+                </div>
+            </section>
+            <section>
+                <div class="btn-group">
+                    <button class="btn btn-normal" type="reset">Clear</button>
+                    <button class="btn btn-cfa" type="submit">Submit</button>
+                </div>
+            </section>
+        </form>
+    </div>
+</body>
+</html>
