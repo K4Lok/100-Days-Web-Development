@@ -3,6 +3,12 @@ body {
     font-family: sans-serif;
 }
 
+h1 {
+    text-align: center;
+    margin-top: 5rem;
+    margin-bottom: 2rem;
+}
+
 .form-wrapper {
     /* width: 75%; */
     width: 50rem;
@@ -11,10 +17,6 @@ body {
     box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
     margin: 0 auto;
     padding: 12px 24px;
-}
-
-h1 {
-    text-align: center;
 }
 
 .form-wrapper form section{
