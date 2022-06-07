@@ -46,4 +46,12 @@ log(facebook); // 2004
 
 ---
 
-
+## Javascript Function
+> A function is a block of code designed to perform a particular task.
+```js
+function myFunction(p1, p2) {
+   return p1 * p2;
+}
+```
+> Local variables can only be accessed from within the function.
+---
