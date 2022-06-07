@@ -32,6 +32,6 @@
 |Day 28|Form Validation, Boolean Attributes, Common Attributes for inputs|[Link](https://github.com/ImK4Lok/100-Days-Web-Development/tree/main/Notes/Day-28)|4 June 2022|
 |Day 29|Finish Task-4, Intro to Javascript Variables|[Link](https://github.com/ImK4Lok/100-Days-Web-Development/tree/main/Notes/Day-29)|5 June 2022|
 |Day 30|Javascript Data Type: String, Array, Object|[Link](https://github.com/ImK4Lok/100-Days-Web-Development/tree/main/Notes/Day-30)|6 June 2022|
-
+|Day 31|Javascript Backtick String, Object Property Accessor, Function|[Link](https://github.com/ImK4Lok/100-Days-Web-Development/tree/main/Notes/Day-31)|7 June 2022|
 
 <!-- |Day | |[Link](https://github.com/ImK4Lok/100-Days-Web-Development/tree/main/Notes/Day-)| May 2022| -->
