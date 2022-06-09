@@ -30,9 +30,10 @@
 |Day 26|HTML Form attribute, Radio & Button|[Link](https://github.com/ImK4Lok/100-Days-Web-Development/tree/main/Notes/Day-26)|2 June 2022|
 |Day 27|HTML Form label & Input, Styling form and input|[Link](https://github.com/ImK4Lok/100-Days-Web-Development/tree/main/Notes/Day-27)|3 June 2022|
 |Day 28|Form Validation, Boolean Attributes, Common Attributes for inputs|[Link](https://github.com/ImK4Lok/100-Days-Web-Development/tree/main/Notes/Day-28)|4 June 2022|
-|Day 29|Finish Task-4, Intro to Javascript Variables|[Link](https://github.com/ImK4Lok/100-Days-Web-Development/tree/main/Notes/Day-29)|5 June 2022|
-|Day 30|Javascript Data Type: String, Array, Object|[Link](https://github.com/ImK4Lok/100-Days-Web-Development/tree/main/Notes/Day-30)|6 June 2022|
-|Day 31|Javascript Backtick String, Object Property Accessor, Function|[Link](https://github.com/ImK4Lok/100-Days-Web-Development/tree/main/Notes/Day-31)|7 June 2022|
-|Day 32|Javascript Methods, Operators, Console Log|[Link](https://github.com/ImK4Lok/100-Days-Web-Development/tree/main/Notes/Day-32)|8 June 2022|
+|Day 29|Finish Task-4, Intro to JavaScript Variables|[Link](https://github.com/ImK4Lok/100-Days-Web-Development/tree/main/Notes/Day-29)|5 June 2022|
+|Day 30|JavaScript Data Type: String, Array, Object|[Link](https://github.com/ImK4Lok/100-Days-Web-Development/tree/main/Notes/Day-30)|6 June 2022|
+|Day 31|JavaScript Backtick String, Object Property Accessor, Function|[Link](https://github.com/ImK4Lok/100-Days-Web-Development/tree/main/Notes/Day-31)|7 June 2022|
+|Day 32|JavaScript Methods, Operators, Console Log|[Link](https://github.com/ImK4Lok/100-Days-Web-Development/tree/main/Notes/Day-32)|8 June 2022|
+|Day 33|JavaScript DOM, Global Window Object, Document Object|[Link](https://github.com/ImK4Lok/100-Days-Web-Development/tree/main/Notes/Day-33)|9 June 2022|
 
 <!-- |Day | |[Link](https://github.com/ImK4Lok/100-Days-Web-Development/tree/main/Notes/Day-)| May 2022| -->
