@@ -35,5 +35,6 @@
 |Day 31|JavaScript Backtick String, Object Property Accessor, Function|[Link](https://github.com/ImK4Lok/100-Days-Web-Development/tree/main/Notes/Day-31)|7 June 2022|
 |Day 32|JavaScript Methods, Operators, Console Log|[Link](https://github.com/ImK4Lok/100-Days-Web-Development/tree/main/Notes/Day-32)|8 June 2022|
 |Day 33|JavaScript DOM, Global Window Object, Document Object|[Link](https://github.com/ImK4Lok/100-Days-Web-Development/tree/main/Notes/Day-33)|9 June 2022|
+|Day 34|JavaScript DOM Tree & Traversal, Nodes and Elements, Query|[Link](https://github.com/ImK4Lok/100-Days-Web-Development/tree/main/Notes/Day-34)|10 June 2022|
 
 <!-- |Day | |[Link](https://github.com/ImK4Lok/100-Days-Web-Development/tree/main/Notes/Day-)| May 2022| -->
