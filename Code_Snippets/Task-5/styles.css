@@ -1,0 +1,50 @@
+body {
+    background-color: #D3EBCD;
+    font-family: 'Kdam Thmor Pro', sans-serif;
+}
+
+form {
+    width: 30rem;
+    height: 15rem;
+    margin: 10rem auto;
+    border: 0.2rem solid #635666;
+    border-radius: 0.6rem;
+    background-color: #F6FBF4;
+    box-shadow: 1px 1px 5px rgba(0, 4, 1, 0.2);
+}
+
+.control {
+    width: 55%;
+    height: 100%;
+    margin: auto auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: start;
+}
+
+label {
+    width: 100%;
+    text-align: start;
+    color: #406882;
+    font-size: 1.5rem;
+    margin-bottom: 0.5rem;
+}
+
+input {
+    padding: 0.5rem;
+    margin-right: 1rem;
+    font-family: inherit;
+    border: 2px solid grey;
+    border-radius: 4px;
+}
+
+input:focus {
+    outline: none !important;
+    border-color: #4B8673;
+    box-shadow: 0 0 4px #4B8673;
+}
+
+#remaining-chars {
+    color: #635666;
+}
