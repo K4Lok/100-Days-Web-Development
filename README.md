@@ -37,6 +37,7 @@
 |Day 33|JavaScript DOM, Global Window Object, Document Object|[Link](https://github.com/ImK4Lok/100-Days-Web-Development/tree/main/Notes/Day-33)|9 June 2022|
 |Day 34|JavaScript DOM Tree & Traversal, Nodes and Elements, Query|[Link](https://github.com/ImK4Lok/100-Days-Web-Development/tree/main/Notes/Day-34)|10 June 2022|
 |Day 35|JavaScript DOM Insert, Delete, Move Elment, Event Listener|[Link](https://github.com/ImK4Lok/100-Days-Web-Development/tree/main/Notes/Day-35)|11 June 2022|
-|Day 36|JavaScript Constant, Styling, CSS Class, Finish Task-5 |[Link](https://github.com/ImK4Lok/100-Days-Web-Development/tree/main/Notes/Day-36)|12 June 2022|
+|Day 36|JavaScript Constant, Styling, CSS Class, Finish Task-5|[Link](https://github.com/ImK4Lok/100-Days-Web-Development/tree/main/Notes/Day-36)|12 June 2022|
+|Day 37|JavaScript Boolean, Control Structures, Triple Equals|[Link](https://github.com/ImK4Lok/100-Days-Web-Development/tree/main/Notes/Day-37)|13 June 2022|
 
 <!-- |Day | |[Link](https://github.com/ImK4Lok/100-Days-Web-Development/tree/main/Notes/Day-)| May 2022| -->
