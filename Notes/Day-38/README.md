@@ -1,5 +1,5 @@
 ## JavaScript Boolean
-### Truthy & Falsy
+### [Truthy & Falsy](https://www.sitepoint.com/javascript-truthy-falsy/)
 > In places where a boolean is expected, JS tries to convert non-boolean values to "truthy" or "falsy" values.
 
 ---
