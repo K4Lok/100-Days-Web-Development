@@ -14,7 +14,8 @@ body {
 
 .btn {
     font: inherit;
-    padding: 0.5rem 1.5rem;
+    padding: 0.4rem 1.5rem;
+    margin-top: 0.4rem;
     background-color: rgb(140, 0, 255);
     border: 1px solid rgb(140, 0, 255);
     color: white;
