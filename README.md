@@ -44,6 +44,6 @@
 |Day 40|JavaScript Project-3, Basic Structure of HTML, Basic CSS|[Link](https://github.com/ImK4Lok/100-Days-Web-Development/tree/main/Notes/Day-40)|16 June 2022|
 |Day 41|JavaScript Project-3, Click Evenlistener for styling|[Link](https://github.com/ImK4Lok/100-Days-Web-Development/tree/main/Notes/Day-41)|17 June 2022|
 |Day 42|JavaScript Project-3, JS FormData Object, HTML data-*|[Link](https://github.com/ImK4Lok/100-Days-Web-Development/tree/main/Notes/Day-42)|18 June 2022|
-
+|Day 43|JavaScript Project-3, JS Tag Name, EventListener on elements|[Link](https://github.com/ImK4Lok/100-Days-Web-Development/tree/main/Notes/Day-43)|19 June 2022|
 
 <!-- |Day | |[Link](https://github.com/ImK4Lok/100-Days-Web-Development/tree/main/Notes/Day-)| May 2022| -->
