@@ -46,5 +46,6 @@
 |Day 42|JavaScript Project-3, JS FormData Object, HTML data-*|[Link](https://github.com/ImK4Lok/100-Days-Web-Development/tree/main/Notes/Day-42)|18 June 2022|
 |Day 43|JavaScript Project-3, JS Tag Name, EventListener on elements|[Link](https://github.com/ImK4Lok/100-Days-Web-Development/tree/main/Notes/Day-43)|19 June 2022|
 |Day 44|JavaScript Finished Project-3|[Link](https://github.com/ImK4Lok/100-Days-Web-Development/tree/main/Notes/Day-44)|20 June 2022|
+|Day 45|Third-Party Package / Library for CSS and JavaScript, Bootstrap|[Link](https://github.com/ImK4Lok/100-Days-Web-Development/tree/main/Notes/Day-45)|21 June 2022|
 
 <!-- |Day | |[Link](https://github.com/ImK4Lok/100-Days-Web-Development/tree/main/Notes/Day-)| May 2022| -->
