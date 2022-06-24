@@ -71,12 +71,30 @@ app.post('/store-data', function(req, res) {
 ```js
 app.use(express.urlencoded({extend}));
 
-//inside the app.post function ....
+// inside the app.post function ....
 // this will output the formData object comprised of all the inputs
 console.log(res.body) // { usernameData: "<your-input>" }
 ```
 
 ### Storing Data
+> 1. To store the data in the local machine, we need a built-in module `fs` which stands for file system. We will use this module to read and write the data into files. 
+> 2. The `path` module helps us join the path name together, via function `path.join()` with multiple parameters.
+> 3. `JSON` is a built-in Object consist methods to `parse` and `stringify` from and to JSON format.
+```js
+const fs = require('fs');
+const path = require('path');
 
+// inside the app.post function ....
+const userName = req.body.usernameData;
+const filePath = path.join(__dirname, 'data', 'users.json'); // "your_directory/data/users.json"
+// get file data, this returns a plain text instead of json format
+const fileData = fs.readFileSync(filePath);
+// To parse the plain text to json
+const existingUsers = JSON.parse(fileData);
+// To append new input into the array
+existingUsers.push(userName);
+// write the new data into the file
+fs.writeFileSync(filePath, JSON.stringify(existingUsers));
+```
 
 ---
