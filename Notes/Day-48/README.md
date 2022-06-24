@@ -46,7 +46,35 @@ app.get('/', function(req, res) {
 ---
 
 ### Parse User Data
+> To parse to the user data from the form input.
+```js
+// to build up a input form at default route
+app.get('/', function(req, res) {
+    res.send(`
+        <form action="/store-data" method="POST">
+            <h1>Form Data</h1>
+            <label for="username">UserName</label>
+            <input type="text" id="username" name="usernameData" />
+        </form>
+    `);
+});
+// to receive the form data with POST method
+app.post('/store-data', function(req, res) {
+  console.log(req); // many things related to the requests
+  console.log(req.body); // undefined before using the urlencoded
+  // Notify the user, the data has been stored
+  res.send("<h1>Data Stored</h1>");
+});
+```
+#### Very important here!
+> From this [answer](https://stackoverflow.com/questions/66555172/why-is-req-body-undefined-in-express), by default, Express.js do not read the body of the incoming request, therefore the `req.body` is undefined or null. So we need an appropriate middleware to help what type of request it is and what's inside the body.
+```js
+app.use(express.urlencoded({extend}));
 
+//inside the app.post function ....
+// this will output the formData object comprised of all the inputs
+console.log(res.body) // { usernameData: "<your-input>" }
+```
 
 ### Storing Data
 
