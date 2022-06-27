@@ -50,5 +50,6 @@
 |Day 46|Intro to Backend, Fullstack, NodeJS, Static & Dynamic Website|[Link](https://github.com/ImK4Lok/100-Days-Web-Development/tree/main/Notes/Day-46)|22 June 2022|
 |Day 47|NodeJS executing and Setup a Server ( Requests & Responds )|[Link](https://github.com/ImK4Lok/100-Days-Web-Development/tree/main/Notes/Day-47)|23 June 2022|
 |Day 48|NodeJS Third-Party Package, Express.js, Parse and Store data|[Link](https://github.com/ImK4Lok/100-Days-Web-Development/tree/main/Notes/Day-48)|24 June 2022|
-
+|Day 49|NodeJS using nodemon to auto restart node server|[Link](https://github.com/ImK4Lok/100-Days-Web-Development/tree/main/Notes/Day-49)|25 June 2022|
+|Day 50|NodeJS EJS template engine, Serving Static file|[Link](https://github.com/ImK4Lok/100-Days-Web-Development/tree/main/Notes/Day-50)|26 June 2022|
 <!-- |Day | |[Link](https://github.com/ImK4Lok/100-Days-Web-Development/tree/main/Notes/Day-)| May 2022| -->
