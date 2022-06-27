@@ -84,10 +84,32 @@ app.get('/', function(req, res) {
 
 ## EJS Syntax
 ### To output value
-```ejs
-<%= title %>
+```js
+<h2><%= students.name %></h2>
 // where we've to pass the value to the parameter
-app.render('index', { title: titleName });
+app.render('index', { students: studentList });
 ```
 
+### Looping statement
+```js
+<ul id="student-list">
+  <% for (const student of students) { %>
+    <li class="student-item">
+      <article>
+        <h2><%= student.name %></h2>
+        <p><%= student.grade %></p>
+        <a href="<%= student.link %>">link</a>
+      </article>
+    </li>
+  <% } %>
+</ul>
+```
+### Conditioning Statement
+```js
+<% if(numberOfStudent === 0) { %>
+  <p>We have no student information right now.</p>
+<% } else { %>
+  <p>Here's the info of the students
+<% } %>
+```
 ---
