@@ -74,5 +74,20 @@ npm install ejs
 app.set('views', path.join(__dirname, 'views'));
 app.set('view engine', 'ejs');
 ```
+3. render the template
+```js
+app.get('/', function(req, res) {
+  res.render('index'); // corresponding
+});
+```
+---
+
+## EJS Syntax
+### To output value
+```ejs
+<%= title %>
+// where we've to pass the value to the parameter
+app.render('index', { title: titleName });
+```
 
 ---
