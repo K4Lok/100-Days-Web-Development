@@ -58,3 +58,21 @@ app.get('/confirm', function(req, res) {
 ```
 
 ---
+
+## Template Engine
+> A template engine enables you to use static template files in your application. At runtime, the template engine replaces variables in a template file with actual values. And transform the template into HTML file send to the client.
+### [EJS](https://blog.logrocket.com/how-to-use-ejs-template-node-js-application/#:~:text=EJS%20(Embedded%20JavaScript%20Templating)%20is,then%20used%20to%20generate%20HTML.)
+> Embedded JavaScript Templating, it embed JavaScript code in a template language that is then used to generate HTML.
+1. Install EJS via npm
+```console
+npm install ejs
+```
+2. setup [the view engine](https://www.educative.io/answers/what-is-a-view-engine-in-expressjs) to apply EJS with [express.set()](https://stackoverflow.com/questions/29961711/app-setviews-dirname-views-in-express-node-js) method
+```js
+// the first parameter of set method is not arbitrary
+// with this 'views' set, we can then render our ejs file later on
+app.set('views', path.join(__dirname, 'views'));
+app.set('view engine', 'ejs');
+```
+
+---
