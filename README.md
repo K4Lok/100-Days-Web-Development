@@ -53,4 +53,5 @@
 |Day 49|NodeJS using nodemon to auto restart node server|[Link](https://github.com/ImK4Lok/100-Days-Web-Development/tree/main/Notes/Day-49)|25 June 2022|
 |Day 50|NodeJS EJS template engine, Serving Static file|[Link](https://github.com/ImK4Lok/100-Days-Web-Development/tree/main/Notes/Day-50)|26 June 2022|
 |Day 51|ExpressJS Include Partial Content, Dynamic Routes, UUID|[Link](https://github.com/ImK4Lok/100-Days-Web-Development/tree/main/Notes/Day-51)|27 June 2022|
+|Day 52|ExpressJS 404, 500 Pages, Handling Status Code|[Link](https://github.com/ImK4Lok/100-Days-Web-Development/tree/main/Notes/Day-52)|28 June 2022|
 <!-- |Day | |[Link](https://github.com/ImK4Lok/100-Days-Web-Development/tree/main/Notes/Day-)| May 2022| -->
