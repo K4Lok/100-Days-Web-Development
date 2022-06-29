@@ -53,10 +53,6 @@ const router = express.Router();
 router.get('/', function(req, res) {
   res.render('index');
 });
-
-router.use(function(req, res) {
-  res.status(404).render('404');
-});
 ```
 3. Exports the router object so that the main entrance can use it
 ```js
