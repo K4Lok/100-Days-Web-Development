@@ -42,3 +42,36 @@ myData.storeData(customData);
 ---
 
 ## Express.js Router
+> In a multiple page website, the number of routes can be messy. The routes can be well organized into different folder and files for better readability via `express.Router` the built-in router object, this instance has the same feature of `app = express()` when it comes to function `get()`, `use()`, those middleware function for handling request and responds.
+1. Create a router object in a new file
+```js
+const express = require('express');
+const router = express.Router();
+```
+2. Create the route for handling requests
+```js
+router.get('/', function(req, res) {
+  res.render('index');
+});
+
+router.use(function(req, res) {
+  res.status(404).render('404');
+});
+```
+3. Exports the router object so that the main entrance can use it
+```js
+module.exports = router;
+```
+4. Import the router object with `require()`
+```js
+const defaultRoutes = require('path/fileName');
+```
+5. To use the router object in the main entrance
+```js
+app.use('/', defaultRoutes);
+```
+> The first parameters `'/'` refers to EVERY request.
+
+---
+
+## Route Parameters & Query Parameters
