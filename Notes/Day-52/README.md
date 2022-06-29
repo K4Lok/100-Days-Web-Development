@@ -1,4 +1,4 @@
-## EJS 404
+## Express.js 404
 ### Showing a 404 Page
 > If we're using the dynamic routes appoarch to display different items based on its unique ID, someone might enter into a wrong URL with invalid ID. So we need to display a 404 page to indicate the item doesn't exist in the first place.
 1. To create a 404.ejs page
@@ -30,7 +30,7 @@ app.use(function(req, res) {
 
 ---
 
-## EJS 500
+## Express.js 500
 ### Showing a 500 Page
 > The HTTP status code 500 refer to server error where server encountered an unexpected condition that prevented it from fulfilling the request.
 ```js
