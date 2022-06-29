@@ -71,3 +71,41 @@ app.use('/', defaultRoutes);
 ---
 
 ## Route Parameters & Query Parameters
+### [Route Parameters](https://expressjs.com/en/guide/using-middleware.html)
+> Route parameters are simply variables derived from named sections of the URL. Express captures the values in the name section and store it in `req.params` property.
+```js
+const app = require('express')();
+app.get('/user/:userId', function(req, res) {
+  // localhost:3000/user/48
+  req.params; // { userId: '48' }
+});
+```
+#### Multiple route parameters can also be accepted
+```js
+app.get('/user/:userId/books/:bookId', (req, res) => {
+  // localhost:3000/user/42/books/101
+  req.params; // { userId: '42', bookId: '101' }
+  res.json(req.params);
+});
+```
+
+### [Query Parameters](https://masteringjs.io/tutorials/express/query-parameters)
+> Query parameters are the part of URL after the `?` symbol, and will be divided with `&` between query parameters.
+```js
+const app = require('express')();
+app.get('*', (req, res) => {
+  // localhost:3000/?userId=21&bookId=301
+  req.query; // { userId: '21', bookId: '301' }
+});
+```
+#### Store in Array
+```shell
+localhost:3000/?color=black&color=yellow
+```
+> Express will set `req.query.color` to an array `['black', 'yellow']`
+#### Store in Object
+```shell
+localhost:3000/?shoe[color]=white
+```
+> Express will parse the query string into `{ shoe: { color: 'white' } }`
+---
