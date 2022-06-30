@@ -44,4 +44,22 @@ console.log(sumUp([1, 3, 5, 7]); // output: 01,3,5,7, which is not what we wante
 // if we want to pass an array instead, we can use the spread operator.
 ```
 
-### []()
+### [Spread Operator](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Spread_syntax)
+> Spread syntax allows an iterable (array, string, object) to be expanded in places where zero or more arguments for function calls.
+```js
+// with the previous rest parameters example,
+console.log(sumUp([1, 3, 5, 7]); // output: 01,3,5,7, this wasn't our goal of this function
+// because we are passing an array to where it supposed to have seperated value as the arguments
+// we can fix it with spreading the array into multiple values
+console.log(sumUp(...[1, 3, 5, 7]); // output: 16
+```
+> `...` the spread operator can also help mixing array together
+```js
+let numberList = [1, 2, 3];
+let newNumber = 10;
+numberList = [...numberList, newNumber]; // [1, 2, 3, 10];
+numberList = [numberList, newNumber]; // [[1, 2, 3], 10];
+```
+
+---
+
