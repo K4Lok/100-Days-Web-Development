@@ -63,3 +63,17 @@ numberList = [numberList, newNumber]; // [[1, 2, 3], 10];
 
 ---
 
+## JavaScript [Stack and Heap Memory](https://www.javascripttutorial.net/javascript-primitive-vs-reference-values/)
+> The JavaScript engine allocates the memory for variables when declaring on two location either stack or heap.
+### Primitive values - Static Data
+> Static Data refers to data whose size is fixed at compile time, and stored on the stack.
+```console
+Primitive Values: null, undefined, boolean, number, string, symbol, and BigInt)
+```
+### Reference values - Dynamic Property
+> A Reference value allows you to add, change, delete properties at any time.
+```console
+Reference Values: Objects ( Array, Function, ...)
+```
+
+---
