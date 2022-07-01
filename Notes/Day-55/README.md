@@ -60,4 +60,37 @@ console.log(myRectangle.getHeight()); // output: 100
 
 ---
 
-## Destructuring Objects & Arrays
+## Destructuring Arrays & Objects 
+> Sometimes, it's not convenient to get the value from arrays or objects by their index or key name. So we have a bettwe appoarch to extract the value from it.
+### For Arrays
+```js
+const customerName = ['Mamma', 'Mia'];
+const [firstName, lastName] = customerName;
+firstName; // output: 'Mamma'
+lastName; // output: 'Mia;
+```
+
+### Objects
+> Normally, we can do it in this way.
+```js
+const car = {
+  name: 'Ferrari',
+  year: '2022'
+}
+name = car.name;
+year = car.year;
+```
+> But it could be cumbersome when it comes to more properties. So we can use the object destructuring to extract the values in a handy way.
+```js
+const { name, year } = car;
+name; // output: 'Ferrari'
+year; // output: '2022'
+```
+> You can also have a customed variable name in the follow way.
+```js
+const { name: carName, year: carYear } = car;
+carName; // output: 'Ferrari'
+carYear; // output: '2022'
+```
+
+---
