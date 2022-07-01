@@ -56,5 +56,6 @@
 |Day 52|ExpressJS 404, 500 Pages, Handling Status Code|[Link](https://github.com/ImK4Lok/100-Days-Web-Development/tree/main/Notes/Day-52)|28 June 2022|
 |Day 53|ExpressJS Splitting Files, Router, Query & Route Parameters|[Link](https://github.com/ImK4Lok/100-Days-Web-Development/tree/main/Notes/Day-53)|29 June 2022|
 |Day 54|JavaScript Rest Parameters, Spread Operator, Primitive & Reference|[Link](https://github.com/ImK4Lok/100-Days-Web-Development/tree/main/Notes/Day-54)|30 June 2022|
+|Day 55|JavaScript Error Handling, Class, Array & Object Destructuring|[Link](https://github.com/ImK4Lok/100-Days-Web-Development/tree/main/Notes/Day-55)|1 July 2022|
 
 <!-- |Day | |[Link](https://github.com/ImK4Lok/100-Days-Web-Development/tree/main/Notes/Day-)| May 2022| -->
