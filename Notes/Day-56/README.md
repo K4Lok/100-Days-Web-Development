@@ -28,7 +28,10 @@ function createPost(newPost, callback) {
 
 createPost(...); // then this will output the third post as well.
 ```
-## Promises
+
+---
+
+## [Promises](https://www.youtube.com/watch?v=PoRJizFvM7s&t=1052s)
 > Callbacks functions can be messy when it nested multiple callbacks, to make to much more readable. ES6 version in 2015 introduced Promises to structed the way of using callbacks. Like callback funtions, promises simplify deferred and aysnchronous computations.
 ### Example
 > Like the previous example, there're many packages supporting promises, but still we can create our own promises function
@@ -52,4 +55,32 @@ createPost({...})
   })
 ```
 
-## Async Await
+---
+
+## [Async Await](https://www.youtube.com/watch?v=_9vgd9XKlDQ)
+> It's introduced in ECMAScript 2017, makes the promises `.then()` & `.catch()` syntax more structured and readable.
+### Example
+> The `async` keyword make sure the function returns a promises. The `await` keyword only works inside a `async` funciton, it ask js to wait until the action is finished then proceed.
+```js
+async function fetchData() {
+  const res = await fetch('https://jsonplaceholder.typicode.com/users'); // here the fetch function is returning a promises object
+  const data = await res.json();
+  console.log(data);
+}
+fetchData();
+```
+### Error Handling
+> We can simply use `try`/`catch` syntax to handle the error from the await action.
+```js
+async function fetchData() {
+  try {
+    const res = await fetch('https://jsonplaceholder.typicode.com/users'); // here the fetch function is returning a promises object
+    const data = await res.json();
+    console.log(data);
+  }
+  catch(error) {
+    console.log(error);
+  }
+}
+```
+---
