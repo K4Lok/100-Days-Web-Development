@@ -37,3 +37,8 @@
 
 ## MySQL Server
 > MySQL is a RDBMS developed by Oracle based on SQL.
+
+### MySQL Workbench
+> It's a GUI software to manage the MySQL Server.
+
+---
