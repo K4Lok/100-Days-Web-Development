@@ -59,5 +59,6 @@
 |Day 55|JavaScript Error Handling, Class, Array & Object Destructuring|[Link](https://github.com/ImK4Lok/100-Days-Web-Development/tree/main/Notes/Day-55)|1 July 2022|
 |Day 56|JavaScript Callbacks, Promises, Async Await Error Handling|[Link](https://github.com/ImK4Lok/100-Days-Web-Development/tree/main/Notes/Day-56)|2 July 2022|
 |Day 57|Database DBMS, RDBMS, Non RDBMS, MySQL|[Link](https://github.com/ImK4Lok/100-Days-Web-Development/tree/main/Notes/Day-57)|3 July 2022|
+|Day 58|Database Table Properties, Insert, Select, Update, Delete|[Link](https://github.com/ImK4Lok/100-Days-Web-Development/tree/main/Notes/Day-58)|4 July 2022|
 
 <!-- |Day | |[Link](https://github.com/ImK4Lok/100-Days-Web-Development/tree/main/Notes/Day-)| May 2022| -->
