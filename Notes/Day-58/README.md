@@ -28,7 +28,18 @@ ENGINE = InnoDB;
 ```
 > For the backticks symbol, is could be omitted if the string is not containing any special characters.
 
+### To get the total row count of the table
+```sql
+SELECT COUNT(*) FROM restaurants;
+```
+Combine it with the filtering keyword:
+```sql
+SELECT COUNT(*) FROM restaurants WHERE type = "German";
+# this will then return the total number of records that have the same value of "German" in column `type`
+```
 ---
+
+
 
 ## Inserting Data
 > Inserting new row into the table.
@@ -55,6 +66,28 @@ SELECT * FROM restaurants WHERE type = "Chamonix";
 Syntax as follow:
 ```sql
 SELECT <column_name_1>, <column_name_2> or <*> FROM <table_name> WHERE <column_name> = <value>;
+```
+
+---
+
+## Updating Data
+> To edit or update existing rows of data.
+```sql
+UPDATE restaurants SET name = "Gigi's";
+# However this statement will set the column `name` for every row. To update only specified row:
+UPDATE restaurants SET name = "Gigi's" WHERE name = "C'Mont-Blanc";
+# Then this will only update the records that meet the condition, where it could be multiple records depends on your conditions.
+```
+
+---
+
+## Deleting Data
+> To delete an existing records from a table.
+```sql
+DELETE FROM restaurants WHERE name = "Gigi's";
+# Delete the records where the name column equals to "Gigi's".
+DELETE FROM restaurants WHERE id = 1;
+# Delete the records where the id equals to 1.
 ```
 
 ---
