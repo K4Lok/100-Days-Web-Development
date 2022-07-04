@@ -91,3 +91,20 @@ DELETE FROM restaurants WHERE id = 1;
 ```
 
 ---
+
+## Complex Database
+> Normal for some of the things that we want to store is too compound that we should never store it into a single column. Instead, we can store it into another table as well as the primary key id of the previous table to link it together.
+#### Example
+```sql
+CREATE TABLE `restaurant_finder`.`addresses` (
+  `id` INT NOT NULL AUTO_INCREMENT,
+  `street` VARCHAR(255) NOT NULL,
+  `street_number` VARCHAR(45) NOT NULL,
+  `city` VARCHAR(255) NOT NULL,
+  `postal_code` INT NOT NULL,
+  `country` VARCHAR(255) NOT NULL,
+  PRIMARY KEY (`id`))
+ENGINE = InnoDB;
+```
+
+---
