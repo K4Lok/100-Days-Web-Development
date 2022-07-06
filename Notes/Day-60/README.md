@@ -16,3 +16,31 @@
 # Blog Website
 > For a Blog website, basically, we need a table for holding per Post and also a table for authors.
 ### Entity Relationship Diagram
+<img width="500" alt="Blog-ERD" src="https://user-images.githubusercontent.com/82365010/177578512-f5122220-ac00-4197-8709-c72a77931cc0.png">
+
+### Routes
+> Also created routes with express.js
+```js
+// ./routes/blog.js
+const express = require('express');
+const router = express.Router();
+
+router.get('/', function(req, res) {
+  res.redirect('/posts');
+});
+
+router.get('/posts', function(req, res) {
+  res.render('posts-list');
+});
+
+module.exports = router;
+```
+```js
+// ./App.js
+const express = require('express');
+const app = express();
+const blogRoutes = require('./routes/blog');
+app.use(blogRoutes);
+```
+---
+
