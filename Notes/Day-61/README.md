@@ -73,6 +73,16 @@ router.post('/new-post', aysnc function(req, res) {
 ---
 
 ### Fetching Data
-> 
-
+> Fetch the data with `db.query('...');`
+```js
+// blog.js
+router.get('posts', async function(req, res) {
+  const query = `
+    SELECT posts.*, authors.name AS author_name FROM posts
+    INNER JOIN authors ON (posts.author_id = authors.id)
+  `;
+  const [posts] = await db.query(query);
+  res.render('posts-list', {posts: posts});
+});
+```
 ---
