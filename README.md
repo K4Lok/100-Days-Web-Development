@@ -62,5 +62,6 @@
 |Day 58|Database Table Properties, Insert, Select, Update, Delete|[Link](https://github.com/ImK4Lok/100-Days-Web-Development/tree/main/Notes/Day-58)|4 July 2022|
 |Day 59|Database Complex DB Structures, ERD, JOIN Tables, Filtering|[Link](https://github.com/ImK4Lok/100-Days-Web-Development/tree/main/Notes/Day-59)|5 July 2022|
 |Day 60|Database Project-4 -> Blog Website|[Link](https://github.com/ImK4Lok/100-Days-Web-Development/tree/main/Notes/Day-60)|6 July 2022|
+|Day 61|Database Project-4 -> Fetch data, INSERT POST request data|[Link](https://github.com/ImK4Lok/100-Days-Web-Development/tree/main/Notes/Day-61)|7 July 2022|
 
 <!-- |Day | |[Link](https://github.com/ImK4Lok/100-Days-Web-Development/tree/main/Notes/Day-)| May 2022| -->
