@@ -47,4 +47,7 @@ const postData = {
 ```
 ---
 
-## 
+## Updateing Posts & Deleting Posts
+> It also works the same with the above solution and methods.
+
+---
