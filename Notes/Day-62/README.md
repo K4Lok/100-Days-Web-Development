@@ -49,5 +49,40 @@ const postData = {
 
 ## Updateing Posts & Deleting Posts
 > It also works the same with the above solution and methods.
+### Update
+```js
+router.post('/posts/:id/edit', async function(req, res) {
+    const query = `
+        UPDATE posts SET title = ?, summary = ?, body = ?
+        WHERE id = ?
+    `;
+    try {
+        const [posts] = await db.query(query, [
+            req.body.title,
+            req.body.summary,
+            req.body.content, 
+            req.params.id
+        ]);
+        if(!posts || posts.length === 0) {
+            throw new Error(`Post: ${id} not existed`);
+        }
+        res.redirect('/posts');
+    }
+    catch(error) {
+        console.log()
+        return res.status(404).render('404');
+    }
+});
+```
 
+### Delete
+```js
+router.post('/posts/:id/delete', async function(req, res) {
+    const query = `
+        DELETE FROM posts WHERE id = ?
+    `;
+    db.query(query, [req.params.id]);
+    res.redirect('/posts');
+});
+```
 ---
