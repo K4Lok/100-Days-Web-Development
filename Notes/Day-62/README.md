@@ -31,6 +31,20 @@ router.get('/posts/:id', async function(req, res) {
 }
 ```
 
+### Makes Datetime be more Readable
+> The default datetime from the database is not straight forward to understands: `Thu Jul 07 2022 20:59:30 GMT+0200 (Central European Summer Time)`, therefore, we can turn the datetime variable to be more readable via built-in number methods - [`.toLocaleDateString(locales, options)`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Date/toLocaleDateString).
+```js
+const postData = {
+  ...posts[0], // pass in the object with spread operator
+  // rewrite the date values
+  date: posts[0].date.toLocaleDateString('en-US', {
+    weekday: 'long',
+    month: 'long',
+    day: 'numeric',
+    year: 'numeric',
+  });
+}
+```
 ---
 
 ## 
