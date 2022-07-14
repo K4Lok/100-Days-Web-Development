@@ -18,3 +18,12 @@
     </form>
 </main>
 ```
+
+### Form attribute - `enctype`
+> This attribute specifies how the form-data shoule be encoded when submitting to the server, it only works when `method="POST"`.
+
+By default, the value is `enctype="application/x-www-form-urlencoded"`, which will encode all characters before sent. However, if we want to upload a file through form, the value `enctype="multipart/form-data"` is necessary.
+```html
+<form action="" method="POST" enctype="multipart/form-data">
+```
+---
