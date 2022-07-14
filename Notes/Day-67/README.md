@@ -80,3 +80,35 @@ router.post('/profiles', upload.single('image'), function(req, res) {
 
 ---
 
+## Preview the Uploaded file
+> To preview the uploaded file immediately, we need javascript to make it smoother without reloading the page in order the refresh the webpage.
+1. Lets create a script to handle the preview function
+```js
+// in the .ejs or .html
+<script src="scripts/file-preview.js" defer></script>
+```
+2. Add event listen to the image picker
+```js
+const filePickerElement = document.getElementById('image');
+const imagePreviewElement = document.getElementById('image-preview');
+// the 'change' event will be fired after the value of the picker is changed
+filePickerElement.addEventListener('change', showPreview);
+```
+3. Create the show preview function
+```js
+// The files will be stored inside the filePickerElement after picker the file
+function showPreview() {
+    const files = filePickerElement.files;
+    // checkt if files is null
+    if(!files || files.length === 0) {
+        imagePreviewElement.style.display = "none";
+        return;
+    }
+    // appoarch if we know there's only one file to pick
+    const pickedFile = files[0];
+    // .createObjectURL returns a path from the browser' side machine, that're picked by the user
+    imagePreviewElement.src = URL.createObjectURL(pickedFile);
+    imagePreviewElement.style.display = "block";
+}
+
+```
