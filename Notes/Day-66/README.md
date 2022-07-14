@@ -11,7 +11,36 @@ router.get('/posts', async function(req, res) {
 });
 ```
 
-## Update and Delete
-> These are quite the same.
+## Update 
+```js
+router.post('/posts/:id/edit', async function(req, res) {
+  const postId = new ObjectID(req.params.id);
+  const post = req.body;
+  const result = await db.getDB().collection('posts').updateOne({_id: postId}, 
+    {$set: {
+      title: post.title,
+      summary: post.summary,
+      body: post.body
+  }});
 
+  return res.redirect('/posts');
+});
+
+```
+
+---
+
+## Delete
+```js
+router.post('/posts/:id/delete', async function(req, res) {
+  const postId = new ObjectID(req.params.id);
+  try {
+    const result = db.getDB().collection('posts').deleteOne({_id: postId});
+    return res.redirect('/posts');
+  }
+  catch(error) {
+    return res.status(404).render('404');
+  }
+});
+```
 ---
