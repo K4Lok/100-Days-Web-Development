@@ -70,5 +70,6 @@
 |Day 66|Finished Project-4, Read, Update & Delete Documents|[Link](https://github.com/ImK4Lok/100-Days-Web-Development/tree/main/Notes/Day-66)|12 July 2022|
 |Day 67|Image Picker -> HTML, Node.js/Express, Javascript|[Link](https://github.com/ImK4Lok/100-Days-Web-Development/tree/main/Notes/Day-67)|13 July 2022|
 |Day 68|AJAX, XMLHttpRequest, Fetch|[Link](https://github.com/ImK4Lok/100-Days-Web-Development/tree/main/Notes/Day-68)|14 July 2022|
+|Day 69|AJAX, GET & POST Requests with JSON data|[Link](https://github.com/ImK4Lok/100-Days-Web-Development/tree/main/Notes/Day-69)|15 July 2022|
 
 <!-- |Day | |[Link](https://github.com/ImK4Lok/100-Days-Web-Development/tree/main/Notes/Day-)| May 2022| -->
