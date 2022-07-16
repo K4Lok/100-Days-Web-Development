@@ -66,5 +66,42 @@ async function fetchComments(event) {
     }
 }
 ```
+
 ---
 
+## Error Handling
+### [Server-side Error](https://www.moesif.com/blog/technical/monitoring/10-Error-Status-Codes-When-Building-APIs-For-The-First-Time-And-How-To-Fix-Them/#:~:text=This%20error%20response%20also%20indicates,contact%20support%20if%20it%20persists.)
+> In some situation, the server might occur error or crash so that it responses an error status code. To handle this, we can use the methods of the response object returned from fetch function (built-in JavaScript function).
+```js
+async function saveComment() {
+    // ...
+    const response = await fetch(...);
+    
+    // .ok will be true only when the response was successful
+    // which is the range of 200-299 in status-code
+    if(response.ok) {
+        fetchComments();
+    }
+    else {
+        alert('Could not send the comment!');
+    }
+}
+```
+
+### Client-side Error
+> Sometimes, the client-side could also occur error where it's not able to reach out the requests, it could due to the network issues. To handle this, whenever we've any client-side error occurred, the fetch function will throw an error. Therefore, we can handle it by using the try and catch syntax.
+```js
+async function saveComment() {
+    // ...
+    try {
+        const response = await fetch(...);
+        // ...
+    }
+    catch(error) {
+        console.log(error);
+    }
+}
+```
+#### Simulate Network Issues
+> Google chrome provide functionality for testing situation like offline, we can try send a AJAX request to the server while we're disconnected to see are we doing well on the error handling.
+---
