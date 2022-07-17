@@ -72,5 +72,6 @@
 |Day 68|AJAX, XMLHttpRequest, Fetch|[Link](https://github.com/ImK4Lok/100-Days-Web-Development/tree/main/Notes/Day-68)|14 July 2022|
 |Day 69|AJAX, GET & POST Requests with JSON data|[Link](https://github.com/ImK4Lok/100-Days-Web-Development/tree/main/Notes/Day-69)|15 July 2022|
 |Day 70|AJAX, Improved Project-4, Details on Comments, Error Handling|[Link](https://github.com/ImK4Lok/100-Days-Web-Development/tree/main/Notes/Day-70)|16 July 2022|
+|Day 71|Authentication, User login & logout, Validating input, Project-5|[Link](https://github.com/ImK4Lok/100-Days-Web-Development/tree/main/Notes/Day-71)|17 July 2022|
 
 <!-- |Day | |[Link](https://github.com/ImK4Lok/100-Days-Web-Development/tree/main/Notes/Day-)| May 2022| -->
