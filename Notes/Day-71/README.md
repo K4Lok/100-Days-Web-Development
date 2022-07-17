@@ -92,3 +92,38 @@ router.post('/login', async function(req, res) {
 ```
 
 ---
+
+## Validating Sign Up
+> Right now the email and confirm-email are not validated yet, and we also haven't handle the case of duplicated email entered.
+### Handle Confirm-email
+```js
+// We can also validate all the entered value even the HTML form's attrubutes has filtered many non-valid inputs.
+router.post('signup', async function(req, res) {
+  // ...
+  if(
+    !enteredEmail ||
+    !enteredConfirmEmail ||
+    !enteredPassword ||
+    enteredPassword.trim() < 6 || // .trim() remove all the whitespaces at the beginning and the end of the string
+    enteredEmail !== enteredConfirmEmail ||
+    !enteredEmail.includes('@')
+  ) {
+    console.log('Please check if all the entered value are valid!');
+    return res.redirect('/signup');
+  }
+});
+```
+Also we need to handle the case of existed email.
+```js
+router.post('/signup', async function(req, res) {
+  // ...
+  const existingUser = await db.getDb().collection('users').findOne({email: enteredEmail});
+  
+  if(existingUser) {
+    console.log('User existed!');
+    return res.redirect('/signup');
+  }
+});
+```
+
+---
