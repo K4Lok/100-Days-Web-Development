@@ -59,3 +59,36 @@ router.post('/signup', async function (req, res) {
 });
 ```
 ---
+
+## Handling User Login
+> We collect the email and password from the form. Firstly do a query on the email to check whether this email exists, if not, say user not exist. Then check whether the password is correct. A note here, we store the password in a hashed form in the sign up stage, therefore, we need the function from `bcrypt` to compare the entered password and the hashed password to see whether they're the same.
+```js
+router.post('/login', async function(req, res) {
+  const userData = req.body;
+  const enteredEmail = userData.email;
+  const enteredPassword = userData.password;
+  
+  const existingUser = await db.getDb().collection('users').findOne({email: enteredEmail});
+  // return null if not exist
+  
+  if(!existingUser) { // when it's null
+    console.log('User not exists!');
+    return res.redirect('/login');
+  }
+  
+  const passwordsAreEqual = await bcrypt.compare(
+    enteredPassword, // plain text password
+    existingUser.password // hashed password
+  );
+  // return true if they're equal
+  
+  if(!passwordsAreEqual) {
+    console.log('Password is not correct!');
+    return res.redirect('/login');
+  }
+  
+  console.log('Password correct, logged in');
+});
+```
+
+---
