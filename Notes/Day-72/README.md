@@ -1,0 +1,5 @@
+# Authentication
+
+## Cookies
+
+## Sessions
