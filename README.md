@@ -74,5 +74,6 @@
 |Day 70|AJAX, Improved Project-4, Details on Comments, Error Handling|[Link](https://github.com/ImK4Lok/100-Days-Web-Development/tree/main/Notes/Day-70)|16 July 2022|
 |Day 71|Authentication, User login & logout, Validating input, Project-5|[Link](https://github.com/ImK4Lok/100-Days-Web-Development/tree/main/Notes/Day-71)|17 July 2022|
 |Day 72|Authentication, Cookies & Sessions, stores temporary data|[Link](https://github.com/ImK4Lok/100-Days-Web-Development/tree/main/Notes/Day-72)|18 July 2022|
+|Day 73|Authorization, Custom Middleware, res.locals property in templates|[Link](https://github.com/ImK4Lok/100-Days-Web-Development/tree/main/Notes/Day-73)|19 July 2022|
 
 <!-- |Day | |[Link](https://github.com/ImK4Lok/100-Days-Web-Development/tree/main/Notes/Day-)| May 2022| -->
