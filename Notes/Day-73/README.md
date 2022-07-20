@@ -1,3 +1,11 @@
+## Cue Section
+1. What's the difference between Authentication and Authorization?
+2. How to implement the basic form of both in express.js?
+3. How Custom Middlewares work and implement?
+4. What's res.locals and where can it be accessed?
+
+---
+
 # [Authorization](https://www.onelogin.com/learn/authentication-vs-authorization#:~:text=Authentication%20and%20authorization%20are%20two,authorization%20determines%20their%20access%20rights.)
 > Authorization is the security process that determines a user or service's level of access, we use authorization to give users or services permission to access some data or perform a particular action.
 
@@ -105,7 +113,7 @@ app.use(async function(req, res, next) {
   res.locals.isAdmin = isAdmin;
 });
 ```
-> `res.locals` is a property that can be accessed globally from every views. We can utilize this property to check whether the navigation bar should display admin, login, logout or not.
+> `res.locals` is a property that can be accessible in templates rendered with res.render. We can utilize this property to check whether the navigation bar should display admin, login, logout or not.
 ```js
 <header id="main-header">
   <nav>
