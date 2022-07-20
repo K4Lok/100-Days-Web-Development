@@ -1,3 +1,11 @@
+## Cue Section
+1. What's Cookies?
+2. What's Sessions?
+3. How they work behind the scenes?
+4. The conept of Sessions for caching user input.
+
+---
+
 # Authentication
 > User identity is a step for determining whether certain pages are accessible or not. However, HTTP is a stateless protocol, which means every HTTP request the server reveives is independent and does not relate to requests that came prior to it. Therefore, here's where cookies and sessions come to place.
 
