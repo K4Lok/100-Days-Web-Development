@@ -1,3 +1,10 @@
+## Cue Section
+1. What's Authentication?
+2. Why we need it?
+3. How to validate the user input?
+
+---
+
 # Imporve the Project-4
 > The project is mostly done, however, we can make it more perfect on the details.
 ## Comment Section
