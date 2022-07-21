@@ -57,4 +57,17 @@ router.get('/transaction', function(req, res) {
 
 ---
 
+## [XSS](https://portswigger.net/web-security/cross-site-scripting#:~:text=How%20does%20XSS%20work%3F,their%20interaction%20with%20the%20application.) Attacks
+> It stands for Cross Site Scripting, when a website is able to upload data and share to other users, you can upload some JavaScript for say to perform certain action. Since the website is going to output the uploaded data, it also execute the script as well.
 
+## XSS [Examples](https://infinitelogins.com/2020/10/13/using-cross-site-scripting-xss-to-steal-cookies/)
+> XSS can be used to steal the Session Cookie where the attackers are able to get access to your account and get full control of it.
+
+## To Prevent XSS
+### Escaping from XSS
+> It's the primary means to prevent XSS attacks by telling the browser to treated the data as plain text and should not be interpreted in any other way.
+
+### Sanitize Content
+> If you don't want to escape the content, sanitizing is another way to prevent XSS attacks, by encoding the content in a way that HTML or CSS can render as a plain text instead of markup and script. ([Not recommended](https://benhoyt.com/writings/dont-sanitize-do-escape/))
+
+---
