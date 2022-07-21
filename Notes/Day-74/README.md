@@ -1,3 +1,11 @@
+## Cue Section
+1. Differences between Authentication and Security.
+2. What's CSRF and how to prevent it? (2 approaches).
+4. What's XSS and how to prevent it? (2 approaches).
+5. How to avoid XSS if we want to output the raw content?
+
+---
+
 # Website Security
 > To prevent unexpected actions by visitors, potential malicious actions like exposing data or granting unwanted access to certain actions on our website.
 
