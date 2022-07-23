@@ -29,7 +29,7 @@ Class Post {
     if(id) this.id = new ObjectId(id);
   }
   
-  async save() {
+  async insert() {
     const result = await db.getDb().collection('posts').insertOne({
       title: this.title,
       content: this.content
@@ -58,3 +58,54 @@ module.exports = Post;
 ```
 
 ## Use the Model
+> After importing the file, we can create the instance of the class and manipulate the data with database.
+```js
+const Post = require('../models/post');
+```
+
+### Insert Data
+```js
+router.post('/posts', async function(req, res) {
+  // ...
+  const post = new Post(enteredTitle, enteredContent);
+  const reult = await post.insert();
+});
+```
+
+### Delete Data
+```js
+router.post(/posts/:id/delete', async function(req, res) {
+  const post = new Post(null, null, req.params.id);
+  const result = await post.delete();
+  res.redirect('/posts');
+});
+```
+
+---
+
+## Fetching with Model
+> Beside insert, update and delete, we should also fetch the data inside our model components.
+```js
+Class Post {
+  constructor(...) {
+    // ...
+  }
+  
+  // ...
+  
+  static async fetchAll() {
+    const posts = await db.getDb().collection('posts').find().toArray();
+    return posts;
+  }
+}
+```
+> With the `static` keyword right now, we're able to use this method without instantiate a class object.
+```js
+router.get('/posts', async function(req, res) {
+  //...
+  const posts = Post.fetchAll();
+  res.render('posts', { posts: posts });
+});
+```
+
+---
