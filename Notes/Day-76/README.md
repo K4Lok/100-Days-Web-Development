@@ -1,3 +1,11 @@
+## Cue Section
+1. What's MVC?
+2. How can MVC help in developing software application?
+3. What do Model do in MVC?
+4. How to implement Model component in Express.js?
+
+---
+
 # MVC
 > The Model-View-Controller is an architectural pattern that separates an application to three main logical components. Each of these components are built to handle specific development aspects of an application.
 
