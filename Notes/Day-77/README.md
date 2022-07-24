@@ -1,3 +1,11 @@
+## Cue Section
+1. What're controller actions?
+2. How to create a middleware for CSRF Token?
+3. Do Express.js handle error of asynchronous function?
+4. How can we protect the route that need to be authenticated?
+
+---
+
 # MVC
 > Keep on refactoring our project into the MVC architectural patterns.
 
