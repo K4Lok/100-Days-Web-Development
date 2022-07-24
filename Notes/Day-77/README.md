@@ -91,3 +91,62 @@ Then we can use our Token in the view template
 ```
 
 ---
+
+## Asynchronous Error Handling
+> Express.js do not handling the error for asynchronous function for us, we have to do the handling on our own. We will use `try`/`catch` syntax to handle the code block that interact with the database because this is the most like error occur scenario where having a falsy query or database error.
+```js
+async function getPost(req, res, next) {
+  let post;
+  try {
+    post = new Post(null, null, req.params.id);
+  }
+  catch(error) {
+    return next(error);
+  }
+  //...
+}
+```
+
+---
+
+## Routes Protecting
+> In every route that needed a authentication, we have done a checking whether the user is authenticated or not, but still it would be annoying to do the checking manually everytime. We can create a middleware for the checking instead, then we pass the middleware in front of every route that needed to be authenticated.
+
+Create the middleware
+```js
+// middlewares/auth-protection-middleware.js
+function guardRoute(req, res, next) {
+  if(!res.locals.isAuth) {
+    return res.redirect('/401');
+  }
+  // if the user is authenticated, pass to the next middleware
+  next();
+}
+
+module.exports = guardRoute;
+```
+
+Use the middleware
+1. First way:
+```js
+const guardRoute = require('../middlewares/auth-protection-middleware');
+
+// For every route.get or route.post function, it takes multiple parameters for middlewares.
+router.get('/admin', guardRoute, blogController.getAdmin);
+
+router.post('/posts', guardRoute, blogController.createPost);
+```
+2. Second way:
+```js
+// As we know, all the requests go through the middleware one by one from the top to the bottom,
+// as long as we place the custom middleware in front of the route we want to protect, it will works fine.
+
+// we want the home directory to be accessed without authenticated
+router.get('/', blogController.getHome);
+
+router.use(guardRoute);
+
+//... The following route middleware will be protected
+```
+
+---
