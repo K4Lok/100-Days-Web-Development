@@ -56,3 +56,38 @@ function getLogin(req, res) {
 ```
 
 ---
+
+## CSRF Token handling Middleware
+> We need a CSRF Token to prevent CSRF attacks for every page that contains any form submission, but it would be cumbersome to pass a token for every view as a parameters. Therefore, we can create our own custom middleware to generate a CSRF Token for every request and store the token into locals, then we can get the token inside the view template directly.
+
+Create the middleware:
+```js
+// middlewares/csrf-token-middleware.js
+function addCSRFToken(req, res, next) {
+  const csrfToken = req.csrfToken();
+  res.locals.csrfToken = csrfToken;
+  next();
+}
+
+module.exports = addCSRFToken;
+```
+
+Use the middleware
+```js
+// app.js
+const app = express();
+const addCSRFTokenMiddleware = require('./middlewares/csrf-token-middleware');
+
+app.use(addCSRFTokenMiddleware);
+```
+
+Then we can use our Token in the view template
+```js
+// xxxx.ejs
+<form action="/xxxx" method="POST">
+  <input type="hidden" value="<%= locals.csrfToken %>" name="_csrf">
+  //...
+</form>
+```
+
+---
