@@ -74,3 +74,24 @@ We created a base.css under the directory `public` and folder `styles`, full pat
 
 ---
 
+# CSS Variables
+> Namely, [custom variables]([https://www.freecodecamp.org/news/what-are-css-variables-and-how-to-use-them/](https://www.lambdatest.com/blog/guide-to-css-variables-with-examples/)) are stored as specific values to be reused throughtout a document.
+## Define it in `:root`
+> the root selector can makes variables being accessed in all files.
+```css
+:root {
+  --color-gray-50: rgb(243, 236, 230);
+  --color-gray-100: rgb(207, 201, 195);
+    
+  --color-primary-50: rgb(253, 224, 200);
+  --color-primary-100: rgb(253, 214, 183);
+  
+  --space-1: 0.25rem;
+  --space-2: 0.5rem;
+  
+  --border-radius-small: 4px;
+  --border-radius-medium: 6px;
+}
+```
+
+---
