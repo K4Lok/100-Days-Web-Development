@@ -60,13 +60,13 @@ app.set('views', path.join(__dirname, 'views'));
 ### Serving Static files - Middleware
 > In order for the user to apply the css and javascripts sources, we need to serve it as a static file assets. And express has a built-in middleware function `express.static` to do so.
 ```js
-//app.js
+// app.js
 app.use(express.static('public'));
 ```
 We created a base.css under the directory `public` and folder `styles`, full path: `/public/styles/base.css`.
 ### Link the css file
 ```js
-//head.ejs
+// head.ejs
 <link rel="stylesheet" href="/styles/base.css">
 ```
 > The path is based on the static path we set, and in this case the public directory is the root.
