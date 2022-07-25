@@ -1,7 +1,7 @@
-# Final Project
+## Final Project
 > We have tackled the basic structure of the project so far, and should move on to the views (HTML pages) right now.
 
-## EJS Template Engine
+# EJS Template Engine
 > Template engine let us to generate HTML markup with embedded plain JavaScript.
 1. Install ejs
 ```console
@@ -18,7 +18,7 @@ app.set('views', path.join(__dirname, 'views'));
 ```
 > path package is recommended to use for having url resources, because it can help joining the path based on the OS.
 
-## Create EJS Files
+# Create EJS Files
 > Ready the necessary `.ejs` file for the view.
 ### head.ejs
 > To store the head part of every HTML file, the title name, scripts, all the common shared resources we need.
@@ -55,7 +55,7 @@ app.set('views', path.join(__dirname, 'views'));
 
 ---
 
-## Base CSS file
+# Base CSS file
 > Let's do some simple decoration for the view.
 ### Serving Static files - Middleware
 > In order for the user to apply the css and javascripts sources, we need to serve it as a static file assets. And express has a built-in middleware function `express.static` to do so.
