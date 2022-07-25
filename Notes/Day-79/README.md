@@ -80,6 +80,7 @@ We created a base.css under the directory `public` and folder `styles`, full pat
 ## Define it in `:root`
 > the root selector can makes variables being accessed in all files.
 ```css
+// base.css
 :root {
   --color-gray-50: rgb(243, 236, 230);
   --color-gray-100: rgb(207, 201, 195);
