@@ -80,5 +80,6 @@
 |Day 76|MVC architecture, Model Component for Data manipulate with DB|[Link](https://github.com/ImK4Lok/100-Days-Web-Development/tree/main/Notes/Day-76)|22 July 2022|
 |Day 77|MVC, Controller actions, CSRF & Route Protecting Middleware|[Link](https://github.com/ImK4Lok/100-Days-Web-Development/tree/main/Notes/Day-77)|23 July 2022|
 |Day 78|Node Final Project - Online Shop, Initialization, Project Structure|[Link](https://github.com/ImK4Lok/100-Days-Web-Development/tree/main/Notes/Day-78)|24 July 2022|
+|Day 79|Final Project, EJS Template Engine, Static files, CSS Variables|[Link](https://github.com/ImK4Lok/100-Days-Web-Development/tree/main/Notes/Day-79)|25 July 2022|
 
 <!-- |Day | |[Link](https://github.com/ImK4Lok/100-Days-Web-Development/tree/main/Notes/Day-)| May 2022| -->
