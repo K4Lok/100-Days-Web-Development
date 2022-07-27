@@ -79,10 +79,10 @@ async function signup(req, res) {
 
 ---
 
-## CSRF
+# Implement CSRF Token
 > To use the csurf package for CSRF projection, we need to implement sessions first. And the sessions package we used need an other packages `connect-mongodb-session` to store the sessions into the database.
 
-### Config Sessions
+## Config Sessions
 1. Install the packages
 ```console
 npm install express-session connect-mongodb-session
@@ -131,5 +131,45 @@ app.use(expressSession(createSessionConfig());
 //...
 ```
 
+## CSRF Middleware
+> We can create our own custom CSRF middleware so that every request can generate a CSRF Token without we passing the Token manually on every needed views.
+1. Install the package
+```console
+npm install csurf
+```
+2. Use the csrf middleware
+```js
+// app.js
+const csrf = require('csurf');
+
+app.use(csrf());
+```
+3. Create our own middleware
+```js
+// middlewares/csrf-token.js
+
+function addCSRFToken(req, res, next) {
+  res.locals.csrfToken = req.csrfToken();
+  
+  next();
+}
+
+module.exports = addCSRFToken;
+```
+4. Use the custom middleware
+```js
+const addCSRFTokenMiddleware = require('./middlewares/csrf-token.');
+
+app.use(addCSRFTokenMiddleware);
+```
+5. Remember to use the token in the form
+```js
+// xxx.ejs
+
+<form action="/xxx" method="POST">
+  <input type="hidden" value="<%= locals.csrfToken %> name="_csrf">
+  //...
+</form>
+```
 
 ---
