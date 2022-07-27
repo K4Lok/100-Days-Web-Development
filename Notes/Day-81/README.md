@@ -45,11 +45,7 @@ npm install bcryptjs
 const bcrypt = require('bcryptjs');
 
 class User() {
-  constructor() {
-    //...
-  }
-  
-  signup() {
+  async signup() {
     const hashedPassword = await bcrypt.hash(this.password, 12);
     await db.getDb().collection('users').insertOne({
       //...
@@ -62,7 +58,23 @@ class User() {
 ## Use the model
 > We use the model in the controller to controll the model or pass data to the views.
 ```js
+// controllers/auth.controller.js
 
+const User = require('../models/User');
+
+async function signup(req, res) {
+  const user = new User(
+    req.body.email,
+      req.body.password, 
+      req.body.fullname, 
+      req.body.street, 
+      req.body.postal,
+      req.body.city
+  );
+  
+  await user.signup();
+  res.redirect('/login');
+}
 ```
 
 ---
