@@ -78,3 +78,58 @@ async function signup(req, res) {
 ```
 
 ---
+
+## CSRF
+> To use the csurf package for CSRF projection, we need to implement sessions first. And the sessions package we used need an other packages `connect-mongodb-session` to store the sessions into the database.
+
+### Config Sessions
+1. Install the packages
+```console
+npm install express-session connect-mongodb-session
+```
+2. Create a file for the session and database config
+```js
+// config/session.js
+
+const session = require('express-session');
+const mongoDbStore = require('connect-mongodb-session');
+
+function createSessionStore() {
+  const MongoDbStore = mongoDbStore(session);
+  
+  const store = new MongoDbStore({
+    uri: 'mongodb://localhost:27017',
+    databaseName: 'online-shop',
+    collection: 'sessions'
+  });
+  
+  return store;
+}
+
+function createSessionConfig() {
+  return {
+    secret: 'secret-salt',
+    cookie: {
+      maxAge: 1000 * 60 * 60 * 24 // 1 day
+    },
+    store: createSessionStore(),
+    resave: false,
+    saveUnintialized: false
+  };
+}
+```
+3. Link the config to the middleware
+```js
+// app.js
+//...
+const expressSession = require('express-session');
+
+const createSessionConfig = require('./config/session');
+
+app.use(expressSession(createSessionConfig());
+
+//...
+```
+
+
+---
