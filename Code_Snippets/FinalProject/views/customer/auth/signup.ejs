@@ -7,37 +7,52 @@
     <main>
         <h1>Create New Account</h1>
         <form action="" method="POST">
+            <div class="form-insights">Sign Up With Email</div>
             <p>
-                <label for="email">E-Mail</label>
-                <input type="email" id="email" name="email" required>
+                <label for="email">
+                    <input type="email" id="email" name="email" placeholder="Email" required>
+                </label>
             </p>
             <p>
-                <label for="confirm-email">E-Mail</label>
-                <input type="email" id="confirm-email" name="confirm-email" required>
+                <label for="confirm-email">
+                    <input type="email" id="confirm-email" name="confirm-email" placeholder="Confirm-Email" required>
+                </label>
             </p>
             <p>
-                <label for="password">Password</label>
-                <input type="password" id="password" name="password" minlength="6" required>
+                <label for="password">
+                    <input type="password" id="password" name="password" placeholder="Password" minlength="6" required>
+                </label>
             </p>
             <hr>
             <p>
-                <label for="fullname">Full Name</label>
-                <input type="text" id="fullname" name="fullname" required>
+                <label for="fullname">
+                    <input type="text" id="fullname" name="fullname" placeholder="Full Name" required>
+                </label>
             </p>
             <p>
-                <label for="street">Street</label>
-                <input type="text" id="street" name="street" required>
+                <label for="street">
+                    <input type="text" id="street" name="street" placeholder="Street (Optional)">
+                </label>
             </p>
             <p>
-                <label for="postal">Postal Code</label>
-                <input type="text" id="postal" name="postal" minlength="3" maxlength="6" required>
+                <label for="postal">
+                    <input type="text" id="postal" name="postal" placeholder="Postal (Optional)" minlength="3" maxlength="6">
+                </label>
             </p>
             <p>
-                <label for="city">City</label>
-                <input type="text" id="city" name="city" required>
+                <label for="city">
+                    <input type="text" id="city" name="city" placeholder="City (Optional)">
+                </label>
             </p>
+            <hr>
+            <label for="terms" class="terms">
+                <input type="checkbox" required>
+                <p>
+                    I agree to the shop's <a href="#">Terms of Use and Privacy Policy</a>
+                </p>
+            </label>
             <button class="btn">Create Account</button>
-            <p id="switch-form"><a href="/login">Login</a></p>
+            <p id="switch-form"><a href="/login">Login instead</a></p>
         </form>
     </main>
 <%- include('../includes/footer'); %>

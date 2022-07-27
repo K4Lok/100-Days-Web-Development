@@ -15,12 +15,12 @@ html {
   --color-gray-600: rgb(32, 29, 26);
   --color-gray-700: rgb(31, 26, 22);
 
-  --color-primary-50: rgb(253, 224, 200);
-  --color-primary-100: rgb(253, 214, 183);
-  --color-primary-200: rgb(250, 191, 143);
-  --color-primary-400: rgb(223, 159, 41);
-  --color-primary-500: rgb(212, 136, 14);
-  --color-primary-700: rgb(212, 120, 14);
+  --color-primary-50: rgb(255, 249, 249);
+  --color-primary-100: rgb(249, 253, 183);
+  --color-primary-200: rgb(250, 253, 183);
+  --color-primary-400: rgb(223, 253, 183);
+  --color-primary-500: rgb(212, 253, 183);
+  --color-primary-700: rgb(157, 218, 113);
   --color-primary-200-contrast: rgb(100, 46, 2);
   --color-primary-500-contrast: white;
 
