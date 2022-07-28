@@ -55,4 +55,31 @@ function logout(req, res) {
 ---
 
 # Authentication Middleware
-> 
+> We are going to utilize the id from session we got and save it to the local global scope and thus we're able to access whether the user is authenticated in every request and also every views.
+## Create the Middleware
+```js
+// middlewares/check-auth.js
+
+function checkAuthStatus(req, res, next) {
+  const uid = req.session.uid;
+  
+  if(!uid) {
+    return next();
+  }
+  
+  res.locals.uid = uid;
+  res.locals.isAuth = true;
+  next();
+}
+```
+## Use the Middleware
+> Every requests will be passed to all the middleware one by one, therefore, the locals variable will be existed individually for every requests based on whether the `session.uid` is existed.
+```js
+// app.js
+
+const checkAuthStatusMiddleware = require('./middleware/check-auth');
+
+app.use(checkAuthStatusMiddleware);
+```
+
+---
