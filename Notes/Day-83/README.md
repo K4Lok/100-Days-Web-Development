@@ -54,10 +54,37 @@ async signup(req, res) {
 // controllers/getSignup.js
 
 function getSignup(req, res) {
-  const cacheInputs = req.session.cacheInputs;
+  const cacheInputs = cacheUtil.getSessionInputs(req);
   
+  if(!cacheInputs) {
+    cacheInputs = {
+      email: '',
+      'confirm-email': '',
+      password: '', 
+      fullname: '', 
+      street: '', 
+      postal: '',
+      city: ''
+   };
+  }
   
+  res.render('customer/auth/signup', {inputData: cacheInputs});
 }
 ```
+## Show cached inputs in Views
+```js
+// views/customer/auth/signup.ejs
 
+<form action="/signup" method="POST">
+  <% if(inputData.errorMessage) { %>
+    <section class="alert">
+      <h4><%= inputdate.errorMessage %></h4>
+    </section>
+  <% } %>
+  <input type="email" ... value="<%= inputData.email %>" >
+  <input type="email" ... value="<%= inputData['confirm-email'] %>" >
+  //...
+</form>
+```
 
+---
