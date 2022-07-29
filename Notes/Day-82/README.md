@@ -124,17 +124,47 @@ module.exports = {
 
 }
 ```
+## Check Email Existence
+> The last thing you want to see is the duplicated user email, check duplicate before sign user up.
+```js
+// models/User.js
+Class User {
+  //...
+  
+  async getUserWithSameEmail() {
+    return await db.getDb().collection('users').findOne({ email: this.email });
+  }
+  
+  async isEmailExists() {
+    const existingUser = await this.getuserWithSameEmail();
+    if(!existingUser) return false;
+    return true;
+  }
+}
+```
+
 ## Use the functions
 ```js
 // controllers/auth.controller.js
 
 const validUtil = require('./util/validation');
 
-async function(req, res, next) {
+async function signup(req, res, next) {
   if(!validUtil.signupInputsAreValid(req.body) {
     return res.redirect('/signup');
   }
-  //...
+  const user = new User(...);
+  
+  try{
+    if(await user.isEmailExists() {
+      console.log('Email existed!');
+      return res.redirect('/signup');
+    }
+    
+    await user.signup();
+    res.redirect('/login');
+  }
+  catch(error) return next(error);
 }
 ```
 
