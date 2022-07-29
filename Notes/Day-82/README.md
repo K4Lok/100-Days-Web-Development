@@ -83,3 +83,59 @@ app.use(checkAuthStatusMiddleware);
 ```
 
 ---
+
+# Input Validation
+> Even though, we have the HTML form attribute to help validate the user inputs, but users are still able to bypass the restriction and submit non-validated inputs into the server. So we need a mechanism to ensure no non-validated inputs passed to the database.
+## Create Validation Function
+```js
+// util/validation.js
+function signupInputsAreValid(formData) {
+    return (
+        checkEmail(formData.email, formData['confirm-email']) &&
+        checkPassword(formData.password) &&
+        !isEmpty(formData.fullname)
+        // !isEmpty(formData.street) &&
+        // !isEmpty(formData.postal) &&
+        // !isEmpty(formData.city)
+    );
+}
+
+function checkEmail(email, confirmEmail) {
+    return (
+        email && 
+        email.includes('@') &&
+        email === confirmEmail
+    );
+}
+
+function checkPassword(password) {
+    return (
+        password &&
+        password.trim().length >= 6 
+    );
+}
+
+function isEmpty(value) {
+    return !value || value.trim() === '';
+}
+
+module.exports = {
+    signupInputsAreValid: signupInputsAreValid,
+
+}
+```
+## Use the functions
+```js
+// controllers/auth.controller.js
+
+const validUtil = require('./util/validation');
+
+async function(req, res, next) {
+  if(!validUtil.signupInputsAreValid(req.body) {
+    return res.redirect('/signup');
+  }
+  //...
+}
+```
+
+---
