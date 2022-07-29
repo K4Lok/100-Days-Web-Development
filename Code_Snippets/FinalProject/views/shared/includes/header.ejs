@@ -1,4 +1,15 @@
 <header>
     <div><a href="/">onDemand</a></div>
-    <nav></nav>
+    <nav>
+        <ul>
+            <% if(locals.isAuth) { %>
+            <li>
+                <form action="/logout" method="POST">
+                    <input type="hidden" value="<%= locals.csrfToken %>" name="_csrf" >
+                    <button>Logout</button>
+                </form>
+            </li>
+            <% } %>
+        </ul>
+    </nav>
 </header>
