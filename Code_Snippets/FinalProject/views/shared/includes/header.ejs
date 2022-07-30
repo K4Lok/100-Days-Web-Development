@@ -1,15 +1,4 @@
-<header>
-    <div><a href="/">onDemand</a></div>
-    <nav>
-        <ul>
-            <% if(locals.isAuth) { %>
-            <li>
-                <form action="/logout" method="POST">
-                    <input type="hidden" value="<%= locals.csrfToken %>" name="_csrf" >
-                    <button>Logout</button>
-                </form>
-            </li>
-            <% } %>
-        </ul>
-    </nav>
+<header id="main-header">
+    <div><a id="logo" href="/">OnDemand.</a></div>
+    <%- include('nav-items') %>
 </header>

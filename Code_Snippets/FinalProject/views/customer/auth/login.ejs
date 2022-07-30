@@ -9,17 +9,23 @@
         <form class="input-form" action="/login" method="POST">
             <input type="hidden" value="<%= locals.csrfToken  %>" name="_csrf">
             <div class="form-insights">Sign Up With Email</div>
+            <% if(inputData.errorMessage) { %>
+                <section class="alert">
+                    <h4><%= inputData.errorMessage %></h4>
+                </section>
+            <% } %>
             <p>
                 <label for="email">
-                    <input type="email" id="email" name="email" placeholder="Email" required>
+                    <input type="email" id="email" name="email" value="<%= inputData.email %>" placeholder="Email" required>
                 </label>
             </p>
             <p>
                 <label for="password">
-                    <input type="password" id="password" name="password" placeholder="Password" minlength="6" required>
+                    <input type="password" id="password" name="password" value="<%= inputData.password %>" placeholder="Password" minlength="6" required>
                 </label>
             </p>
-            <button class="btn">Log you in</button>
+            <button class="btn">Log me in</button>
+            <p id="switch-form"><a href="/signup"> Signup instead</a></p>
         </form>
     </main>
 <%- include('../../shared/includes/footer'); %>

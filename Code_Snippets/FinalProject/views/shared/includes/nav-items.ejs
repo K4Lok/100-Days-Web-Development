@@ -1,0 +1,28 @@
+<ul id="nav-middle">
+    <% if(!locals.isAdmin) { %>
+        <li><a href="/">Shop</a></li> 
+    <% } %>
+    <% if(locals.isAuth && !locals.isAdmin) { %>
+        <li><a href="/orders">Orders</a></li>
+        <li><a href="/cart">Cart</a></li>
+    <% } %>
+    <% if(locals.isAdmin) { %>
+        <li><a href="/admin/products">Manage Product</a></li>    
+        <li><a href="/admin/orders">Manage Orders</a></li>    
+    <% } %>
+</ul>
+
+<ul id="nav-right">
+    <% if(!locals.isAuth) { %>
+        <li><a href="/login">Login</a></li>
+        <li><a href="/signup">Signup</a></li>
+    <% } %>
+    <% if(locals.isAuth) { %>
+        <li>
+            <form action="/logout" method="POST">
+                <input type="hidden" value="<%= locals.csrfToken %>" name="_csrf" >
+                <button id="logout"><a>Logout</a></button>
+            </form>
+        </li>
+        <% } %>
+</ul>

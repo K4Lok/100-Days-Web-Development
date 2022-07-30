@@ -103,3 +103,17 @@ form #switch-form a{
     text-decoration: none;
     font-size: 0.9rem;
 }
+
+.alert {
+    width: 90%;
+    margin: 0 auto 2rem auto;
+    color: var(--color-gray-700);
+    background-color: var(--color-error-100);
+    border: 1px solid var(--color-error-500);
+    border-radius: 0.25rem;
+    text-align: center;
+}
+
+.alert h4{
+    margin: 1rem 0;
+}

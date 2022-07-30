@@ -9,40 +9,45 @@
         <form class="input-form" action="/signup" method="POST">
             <input type="hidden" value="<%= locals.csrfToken %>" name="_csrf">
             <div class="form-insights">Sign Up With Email</div>
+            <% if(inputData.errorMessage) { %>
+                <section class="alert">
+                    <h4><%= inputData.errorMessage %></h4>
+                </section>
+            <% } %>
             <p>
                 <label for="email">
-                    <input type="email" id="email" name="email" placeholder="Email" required>
+                    <input type="email" id="email" name="email" value="<%= inputData.email %>" placeholder="Email" required>
                 </label>
             </p>
             <p>
                 <label for="confirm-email">
-                    <input type="email" id="confirm-email" name="confirm-email" placeholder="Confirm-Email" required>
+                    <input type="email" id="confirm-email" name="confirm-email" value="<%= inputData['confirm-email'] %>" placeholder="Confirm-Email" required>
                 </label>
             </p>
             <p>
                 <label for="password">
-                    <input type="password" id="password" name="password" placeholder="Password" minlength="6" required>
+                    <input type="password" id="password" name="password" value="<%= inputData.password %>" placeholder="Password" minlength="6" required>
                 </label>
             </p>
             <hr>
             <p>
                 <label for="fullname">
-                    <input type="text" id="fullname" name="fullname" placeholder="Full Name" required>
+                    <input type="text" id="fullname" name="fullname" value="<%= inputData.fullname %>" placeholder="Full Name" required>
                 </label>
             </p>
             <p>
                 <label for="street">
-                    <input type="text" id="street" name="street" placeholder="Street (Optional)">
+                    <input type="text" id="street" name="street" value="<%= inputData.street %>" placeholder="Street (Optional)">
                 </label>
             </p>
             <p>
                 <label for="postal">
-                    <input type="text" id="postal" name="postal" placeholder="Postal (Optional)" minlength="3" maxlength="6">
+                    <input type="text" id="postal" name="postal" value="<%= inputData.postal %>" placeholder="Postal (Optional)" minlength="3" maxlength="6">
                 </label>
             </p>
             <p>
                 <label for="city">
-                    <input type="text" id="city" name="city" placeholder="City (Optional)">
+                    <input type="text" id="city" name="city" value="<%= inputData.city %>" placeholder="City (Optional)">
                 </label>
             </p>
             <hr>
