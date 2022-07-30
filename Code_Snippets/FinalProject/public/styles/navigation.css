@@ -8,7 +8,7 @@ ul a {
     display: grid;
     grid-template-columns: 1fr 2.5fr 1fr;
     align-items: baseline;
-    padding: 2rem 4rem;
+    padding: 1.4rem 4rem;
 }
 
 #logo {
@@ -21,17 +21,42 @@ ul a {
 #nav-middle {
     display: flex;
     justify-content: center;
+    gap: 2rem;
 }
 
 #nav-right {
     display: flex;
     justify-content: right;
+    gap: 2rem;
+}
+
+ul li {
+    position: relative;
+}
+
+#nav-middle a::after,
+#nav-right a::after {
+    position: absolute;
+    content: '';
+    left: 50%;
+    bottom: -4px;
+    width: 0%;
+    height: 3px;
+    background-color: var(--color-primary-700);
+    text-align: center;
+    transition: all 0.3s ease-in-out;
+}
+
+#nav-middle a:hover::after,
+#nav-right a:hover::after {
+    left: 0;
+    width: 100%;
 }
 
 ul a {
     font-size: 1.3rem;
     color: var(--color-primary-900);
-    padding: 0 2rem;
+    /* margin: 0 2rem; */
 }
 
 #logout {
