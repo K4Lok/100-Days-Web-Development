@@ -87,4 +87,25 @@ function getSignup(req, res) {
 </form>
 ```
 
+## Showcase
+<p align="center">
+<img width="47%" alt="signup" src="https://user-images.githubusercontent.com/82365010/181862343-add8c25a-ef66-44ae-96a7-0853cab224fc.png">
+
+<img width="47%" align="right" alt="login" src="https://user-images.githubusercontent.com/82365010/181862353-3ecc7b03-a30d-480d-859d-c097bbb81477.png">
+</p>
+
+---
+
+## Create and Styling the Naviagtion bar
+> Show the navigation based on whether the user is authenticated and is admin or not.
+
+Not login
+<img width="1406" alt="Screenshot 2022-07-30 at 1 19 32 AM" src="https://user-images.githubusercontent.com/82365010/181862661-bd94458d-7e70-47c5-a39d-2308ac4fb6bc.png">
+
+Normal user
+<img width="1407" alt="Screenshot 2022-07-30 at 1 20 19 AM" src="https://user-images.githubusercontent.com/82365010/181862725-45605d27-cb47-44b5-ba3a-ccaf67ac7e6f.png">
+
+Admin
+<img width="1413" alt="Screenshot 2022-07-30 at 1 19 23 AM" src="https://user-images.githubusercontent.com/82365010/181862657-c7e534d1-5ee5-4198-89e2-b278d8680b0a.png">
+
 ---
