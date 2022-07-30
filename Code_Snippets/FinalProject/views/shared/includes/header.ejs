@@ -1,4 +1,17 @@
-<header id="main-header">
-    <div><a id="logo" href="/">Wegan.</a></div>
-    <%- include('nav-items') %>
+<header>
+    <section id="main-header">
+        <div><a id="logo" href="/">Wegan.</a></div>
+        <%- include('nav-items') %>
+    </section>
+    <section id="mobile-header">
+        <div><a id="logo" href="/">Wegan.</a></div>
+        <button id="mobile-menu-btn">
+            <span></span>
+            <span></span>
+            <span></span>
+        </button>
+    </section>
 </header>
+<aside id="mobile-menu">
+    <%- include('nav-items-mobile') %>
+</aside>

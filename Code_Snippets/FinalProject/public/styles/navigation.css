@@ -1,14 +1,14 @@
-div a,
-ul a {
-    text-decoration: none;
-}
-
 #main-header {
     width: 100%;
-    display: grid;
+    display: none;
     grid-template-columns: 1fr 2.5fr 1fr;
     align-items: baseline;
-    padding: 1.4rem 4rem;
+    /* padding: 1.4rem 4rem; */
+    padding: 1.4rem 4%;
+}
+
+main {
+    margin-top: 8rem;
 }
 
 #logo {
@@ -59,7 +59,111 @@ ul a {
     /* margin: 0 2rem; */
 }
 
+div a,
+ul a {
+    text-decoration: none;
+}
+
 #logout {
     all: unset;
     cursor: pointer;
+}
+
+/* For mobile menu styling */
+
+#mobile-header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 5rem;
+    display: flex;
+    justify-content: space-between;
+    align-content: center;
+    align-items: center;
+    padding: 1.2rem 4%;
+    background-color: rgb(255, 249, 224);
+    box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.2);
+}
+
+#mobile-menu {
+    position: fixed;
+    top: 5rem;
+    left: 0;
+    height: calc(100vh - 5rem);
+    width: 100%;
+    background-color: rgb(47, 47, 47);
+    display: none;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 3rem;
+}
+
+#mobile-menu.open {
+    display: flex;
+}
+
+#mobile-menu-btn {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    border: none;
+    cursor: pointer;
+    width: 2.25rem;
+    height: 2.25rem;
+    background-color: transparent;
+    margin-right: 2%;
+}
+
+#mobile-menu-btn span {
+    width: 2.25rem;
+    height: 0.2rem;
+    background-color: var(--color-primary-900);
+}
+
+#mobile-nav-items {
+    width: 100%;
+}
+
+#mobile-nav-items li{
+    text-align: center;
+}
+
+#mobile-nav-items li:hover{
+    text-align: center;
+    background-color: rgb(96, 94, 94);
+}
+
+#mobile-nav-items li a{
+    display: inline-block;
+    font-size: 2.2rem;
+    margin: 1.2rem 3rem;
+}
+
+#mobile-nav-items li a:hover,
+#mobile-nav-items li a:active{
+    color:rgb(191, 218, 149)
+}
+
+@media (min-width: 768px) {
+    main {
+        margin-top: 0;
+    }
+
+    #main-header {
+        display: grid;
+    }
+
+    #mobile-header {
+        display: none;
+    }
+    
+    #mobile-menu {
+        display: none;
+    }
+    
+    #mobile-menu-btn {
+        display: none;
+    }
 }
