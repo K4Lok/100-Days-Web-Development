@@ -15,5 +15,17 @@ We will do the Fetching and items styling later on.
 ## Add New Product
 > I've created a form for submitting the product information, but not yet create the connection and model for the table yet.
 
+<img width="600" alt="Screenshot 2022-07-31 at 11 56 43 AM" src="https://user-images.githubusercontent.com/82365010/182023081-f953871a-efc6-4522-bd4d-194a521efdaa.png">
+
+## Uploading Images
+> In order to upload images via HTTP POST request, we need to set the encrypt type to `multipart/form-data`
+```html
+<form action="admin/new-product" method="POST" enctype="multipart/form-data">
+```
+## Important Notes here
+> For the csrf Token we generate for each request for preventing CSRF attack, the package `csurf` doesn't support the hidden input for passing the token under the `multipart/form-data` encrypt type. So, we need a plan B from `csurf`, passing the token directly at the url.
+```js
+<form action="/admin/new-product?_csrf=<%= locals.csrfToken %>" method="POST" enctype="multipart/form-data">
+```
 
 ---
