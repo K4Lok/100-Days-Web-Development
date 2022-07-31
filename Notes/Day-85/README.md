@@ -29,3 +29,44 @@ We will do the Fetching and items styling later on.
 ```
 
 ---
+
+# Product Model
+> It helps interacting with the database under the blueprint of Product. We need a function for fetching all the products and a function for storing new product so far.
+## Define the Model
+```js
+// models/Product.js
+
+class Product {
+  constructor(productData) {
+    this.name = productData.name;
+    this.summary = productData.summary;
+    this.price = productData.price;
+    this.description = productData.description;
+    this.image = productData.image; // name of the image with extension
+    this.imagePath = `product-data/images/${productData.image}`; // real path of the image
+    this.imageUrl = `/products/assets/images/${productData.iamge}`; // path for the client-side
+    if(productData._id) { // have the id if we pass the product from database to constructor
+      this.id = productData._id.toString();
+    }
+  }
+  
+  static async findAll() {
+    const products = await db.getDb().collection('products').find().toString();
+    
+    return products.map(function(product) {
+      return new Product(product);
+    });
+  }
+  
+  async save() {
+    const productData = {
+        name: this.name,
+        summary: this.summary,
+        price: this.price,
+        description: this.description,
+        image: this.image
+    };
+    await db.getDb().collection('products').insertOne(productData);
+  }
+}
+```
