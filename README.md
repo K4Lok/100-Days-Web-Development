@@ -1,4 +1,12 @@
 # 100-Days-Web-Development
+Here's a repository for storing my notes of learning the full stack knowledges as a web developer in 100 Days.
+
+## Main Objective
+Web development is something what I want to try and mastery for a long time, here I'll learn the basis of building a website with `HTML`, `CSS` and `Javascript`. Then the knowledge of backend with `node.js` / `express.js`, to host a server for handling requests and functions like routing, sessions, authentication, and many others. Most importantly, how to interact with the database and not only SQL server but NoSQL as well. At the end, I wish I could finish a real life project that functional in backend as well as a proper CSS styling.
+
+---
+
+## Table Of Content
 
 | Day | Content | Notes | Finish Date |
 |-----|---------|-------|------------:|
