@@ -7,6 +7,22 @@ html {
   background-color: var(--color-background);
 }
 
+a {
+  text-decoration: none;
+}
+
+ul,
+ol {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+h1 {
+  text-align: center;
+  color: var(--color-primary-title);
+}
+
 :root {
   --color-gray-50: rgb(243, 236, 230);
   --color-gray-100: rgb(207, 201, 195);
@@ -27,12 +43,20 @@ html {
   --color-primary-200-contrast: rgb(100, 46, 2);
   --color-primary-500-contrast: white;
 
+  --color-primary-btn: rgb(212, 253, 183);
+  --color-primary-btn-hover: rgb(194, 234, 166);
+
+  --color-primary-text-hover: rgb(83, 135, 48);
+
   --color-background: rgb(251, 247, 222);
 
   --color-error-100: rgb(255, 192, 180);
+  --color-error-300: rgb(231, 154, 139);
   --color-error-500: rgb(199, 51, 15);
 
   --color-primary-500-bg: rgb(63, 60, 58);
+
+  --color-primary-title: rgb(81, 139, 83);
 
   --space-1: 0.25rem;
   --space-2: 0.5rem;

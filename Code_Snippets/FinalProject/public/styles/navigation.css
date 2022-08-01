@@ -34,6 +34,10 @@ ul li {
     position: relative;
 }
 
+#main-header a:hover {
+    color: var(--color-primary-text-hover);
+}
+
 #nav-middle a::after,
 #nav-right a::after {
     position: absolute;

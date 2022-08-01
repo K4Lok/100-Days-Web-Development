@@ -1,0 +1,27 @@
+.manage-product {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    width: 100%;
+    margin: 4rem 4%;
+}
+
+.manage-product h2,
+.manage-product p {
+    margin: 0;
+    margin-right: 2rem;
+}
+
+.btn-link {
+    padding: 0.4rem;
+    font-size: 0.75rem;
+    font-weight: 600;
+    color: var(--color-primary-900);
+    background-color: var(--color-primary-btn);
+    border: 2px solid var(--color-primary-700);
+    border-radius: 0.6rem;
+}
+
+.btn-link:hover {
+    background-color: var(--color-primary-btn-hover);
+}

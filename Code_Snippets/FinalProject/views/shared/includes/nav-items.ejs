@@ -1,6 +1,6 @@
 <ul id="nav-middle">
     <% if(!locals.isAdmin) { %>
-        <li><a href="/">Shop</a></li> 
+        <li><a href="/products">Shop</a></li> 
     <% } %>
     <% if(locals.isAuth && !locals.isAdmin) { %>
         <li><a href="/orders">Orders</a></li>

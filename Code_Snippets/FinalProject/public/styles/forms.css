@@ -1,14 +1,3 @@
-h1 {
-    text-align: center;
-}
-
-ul,
-ol {
-    list-style: none;
-    padding: 0;
-    margin: 0;
-}
-
 .input-form {
     width: 70%;
     max-width: 40rem;
@@ -18,19 +7,19 @@ ol {
     background-color: rgb(250, 251, 234);
 }
 
-form hr {
+.input-form hr {
     width: 90%;
     margin: 1.5rem auto;
     border: 0.3px solid var(--color-gray-100);
 }
 
-form .form-insights {
+.input-form .form-insights {
     text-align: center;
     color: var(--color-gray-500);
     margin-bottom: 2rem;
 }
 
-form input {
+.input-form input {
     height: 40px;
     width: 90%;
     margin: 0 auto;
@@ -41,22 +30,22 @@ form input {
     padding: 0.25rem 1rem;
 }
 
-form input:active,
-form input:focus {
+.input-form input:active,
+.input-form input:focus {
     outline: none;
 }
 
-form input::placeholder {
+.input-form input::placeholder {
     color: var(--color-gray-300);
 }
 
-form label.terms {
+.input-form label.terms {
     width: 90%;
     margin: 1.25rem auto 0.5rem auto;
     display: block;
 }
 
-form input[type="checkbox"] {
+.input-form input[type="checkbox"] {
     margin: 0;
     width: 1rem;
     height: 1rem;
@@ -67,17 +56,17 @@ form input[type="checkbox"] {
     cursor: pointer;
 }
 
-form input[type="checkbox"]:checked {
+.input-form input[type="checkbox"]:checked {
     outline: 1.5px solid var(--color-primary-700);
     border-radius: 2rem !important;
 }
 
-form label p {
+.input-form label p {
     display: inline;
     vertical-align: middle;
 }
 
-form .btn {
+.input-form .btn {
     cursor: pointer;
     font-family: inherit;
     font-size: 0.95rem;
@@ -91,15 +80,15 @@ form .btn {
     border-radius: 0.25rem;
 }
 
-form .btn:hover {
+.input-form .btn:hover {
     background-color: var(--color-primary-700);
 }
 
-form #switch-form {
+.input-form #switch-form {
     text-align: center;
 }
 
-form #switch-form a{
+.input-form #switch-form a{
     color: var(--color-gray-300);
     text-decoration: none;
     font-size: 0.9rem;
