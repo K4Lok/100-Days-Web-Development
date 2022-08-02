@@ -95,5 +95,6 @@ Web development is something what I want to try and mastery for a long time, her
 |Day 83|Final Project, Caching w/ Session, Check Admin, Styling Navigation|[Link](https://github.com/ImK4Lok/100-Days-Web-Development/tree/main/Notes/Day-83)|29 July 2022|
 |Day 84|Final Project, Responsive Website Design, Mobile Menu Toggle|[Link](https://github.com/ImK4Lok/100-Days-Web-Development/tree/main/Notes/Day-84)|30 July 2022|
 |Day 85|Final Project, Admin Routes, Styling, Upload Image, Multer & Csurf|[Link](https://github.com/ImK4Lok/100-Days-Web-Development/tree/main/Notes/Day-85)|31 July 2022|
+|Day 86|Final Project, Styling Product card, Managing w Model, Controller|[Link](https://github.com/ImK4Lok/100-Days-Web-Development/tree/main/Notes/Day-86)|1 Aug 2022|
 
 <!-- |Day | |[Link](https://github.com/ImK4Lok/100-Days-Web-Development/tree/main/Notes/Day-)| May 2022| -->
