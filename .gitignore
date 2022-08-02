@@ -3,3 +3,21 @@ node_modules/
 
 # MacOS
 .DS_Store
+
+# JPEG
+*.jpg
+*.jpeg
+*.jpe
+
+# Graphics Interchange Format
+*.gif
+
+# Portable Network Graphics
+*.png
+
+# Scalable Vector Graphics
+*.svg
+*.svgz
+
+# Portable Document Format
+*.pdf
