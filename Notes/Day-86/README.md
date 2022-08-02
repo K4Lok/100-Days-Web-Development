@@ -4,11 +4,11 @@
 # Styling Prduct Item
 Here we'll style the product item to match the theme of the website.
 ## Showcase
-### Larger Screen
+### Normal Laptop Screen
+<img width="1142" alt="Screenshot 2022-08-02 at 2 59 57 AM" src="https://user-images.githubusercontent.com/82365010/182277192-57713d1e-dcd4-4017-999e-17d313755c92.png">
 
-### RWD
-
-
+### Mobile Devices
+<img width="526" alt="Screenshot 2022-08-02 at 3 02 15 AM" src="https://user-images.githubusercontent.com/82365010/182277200-0d1cbb73-5831-48b8-baba-ea9b018c39f5.png">
 
 ---
 
