@@ -1,11 +1,11 @@
-<article class="product-item">
+<div class="product-item">
     <img src="<%= product.imageUrl %>" alt="<%= product.name %>">
-    <section>
+    <section class="product-details">
         <p class="product-name"><%= product.name %></p>
-        <p class="product-price"><%= product.price %></p>
+        <div class="product-bottom">
+            <p class="product-price">$<%= product.price %></p>
+            <a class="" href="/admin/products/<%= product.id %>">More details &#8594</a>
+            <!-- <button class="btn btn-alt">Delete</button> -->
+        </div>
     </section>
-    <div>
-        <a class="btn btn-alt" href="/admin/products/<%= product.id %>">View & Edit</a>
-        <button class="btn btn-alt">Delete</button>
-    </div>
-</article>
+</div>

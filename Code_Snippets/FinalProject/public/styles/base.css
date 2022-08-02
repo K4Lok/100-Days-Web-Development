@@ -7,6 +7,10 @@ html {
   background-color: var(--color-background);
 }
 
+body {
+  margin: 0;
+}
+
 a {
   text-decoration: none;
 }
@@ -23,9 +27,14 @@ h1 {
   color: var(--color-primary-title);
 }
 
+@media (min-width: 768px) {
+
+}
+
 :root {
   --color-gray-50: rgb(243, 236, 230);
   --color-gray-100: rgb(207, 201, 195);
+  --color-gray-200: rgb(146, 144, 140);
   --color-gray-300: rgb(99, 92, 86);
   --color-gray-400: rgb(70, 65, 60);
   --color-gray-500: rgb(37, 34, 31);
@@ -48,7 +57,8 @@ h1 {
 
   --color-primary-text-hover: rgb(83, 135, 48);
 
-  --color-background: rgb(251, 247, 222);
+  /* --color-background: rgb(251, 247, 222); */
+  --color-background: rgb(255, 252, 235);
 
   --color-error-100: rgb(255, 192, 180);
   --color-error-300: rgb(231, 154, 139);
@@ -57,6 +67,8 @@ h1 {
   --color-primary-500-bg: rgb(63, 60, 58);
 
   --color-primary-title: rgb(81, 139, 83);
+
+  --color-product-details: rgb(255, 255, 255);
 
   --space-1: 0.25rem;
   --space-2: 0.5rem;

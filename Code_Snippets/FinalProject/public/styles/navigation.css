@@ -57,7 +57,7 @@ ul li {
     width: 100%;
 }
 
-ul a {
+header ul a {
     font-size: 1.3rem;
     color: var(--color-primary-900);
     /* margin: 0 2rem; */
