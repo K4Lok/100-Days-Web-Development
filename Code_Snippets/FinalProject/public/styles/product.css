@@ -41,13 +41,13 @@
     flex: 1;
     margin: 1rem 4%;
     display: grid;
-    grid-template-columns: repeat(auto-fill, 26rem);
+    grid-template-columns: repeat(auto-fill, 22rem);
     gap: 2rem;
     justify-content: center;
 }
 
 .product-item {
-    width: 26rem;
+    width: 22rem;
     border: 0.2px solid var(--color-gray-100);
     border-radius: 10px;
     box-shadow: 0 1px 10px rgba(0, 0, 0, 0.2);
@@ -125,11 +125,11 @@
 
     .products-grid {
         justify-content: initial;
-        grid-template-columns: repeat(auto-fill, 20rem);
+        grid-template-columns: repeat(auto-fill, 18rem);
     } 
 
     .product-item {
-        width: 20rem;
+        width: 18rem;
     }
 
     .btn-link {

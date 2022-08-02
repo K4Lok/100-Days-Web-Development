@@ -1,4 +1,4 @@
-<%- include('../../shared/includes/head', { pageTitle: 'Manage Products' }) %>
+<%- include('../../shared/includes/head', { pageTitle: 'Update Product' }) %>
 <link rel="stylesheet" href="/styles/product-form.css">
 <link rel="stylesheet" href="/styles/navigation.css">
 <link rel="stylesheet" href="/styles/auth.css">
@@ -7,16 +7,11 @@
 <body>
     <%- include('../../shared/includes/header') %>
     <main>
-        <h1>Add new Product</h1>
+        <h1>Manage This Product</h1>
         <%- include('../includes/product-form', {
-            submitPath: '/admin/new-product',
-            product: {
-                name: '',
-                summary: '',
-                price: '',
-                description: ''
-            },
-            imageRequired: true
+            submitPath: '/admin/products/' + product._id.toString(),
+            product: product,
+            imageRequired: false
         }) %>
     </main>
 <%- include('../../shared/includes/footer'); %>
