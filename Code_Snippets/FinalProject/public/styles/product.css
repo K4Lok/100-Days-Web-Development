@@ -16,7 +16,9 @@
 }
 
 .btn-link {
-    padding: 0.8rem 8rem;
+    width: 70%;
+    padding: 0.8rem 6rem;
+    text-align: center;
     font-size: 0.75rem;
     font-weight: 600;
     color: var(--color-primary-900);
@@ -29,11 +31,20 @@
     background-color: var(--color-primary-btn-hover);
 }
 
-/* Product wrapper */
-.products-showcase {
-    /* display: flex; */
+.btn-red {
+    color: var(--color-error-500);
+    background-color: var(--color-error-100);
+    border: 2px solid var(--color-error-300);
 }
 
+.btn-red:hover {
+    background-color: var(--color-error-300);
+}
+
+.btn-red.pressed {
+    background-color: var(--color-error-300);
+    border: 2px solid var(--color-error-100);
+}
 
 /* For Product Item */
 
@@ -52,10 +63,15 @@
     border-radius: 10px;
     box-shadow: 0 1px 10px rgba(0, 0, 0, 0.2);
     overflow: hidden;
+    /* transition: all .1s ease-in-out; */
+    /* position: relative; */
+}
+
+.product-item.scale {
     transition: all .1s ease-in-out;
 }
 
-.product-item:hover {
+.product-item.scale:hover {
     transform: scale(1.04) translateY(-14px);
 }
 
@@ -116,6 +132,31 @@
     transition: color;
 }
 
+.btn-delete {
+    display: none;
+    position: absolute;
+    top: -0.75rem;
+    right: -0.75rem;
+    /* z-index: 10; */
+    border-radius: 50%;
+    width: 1.5rem;
+    height: 1.5rem;
+    cursor: pointer;
+    background-color: var(--color-gray-50);
+    border: 2px solid var(--color-gray-100);
+    color: var(--color-gray-500);
+}
+
+.btn-delete:hover {
+    background-color: var(--color-error-100);
+    border: 2px solid var(--color-error-300);
+    color: var(--color-error-500);
+}
+
+.btn-delete.show {
+    display: block;
+}
+
 @media (min-width: 768px) {
     .manage-product {
         flex-direction: row;
@@ -134,5 +175,6 @@
 
     .btn-link {
         padding: 0.4rem;
+        width: initial;
     }
 }

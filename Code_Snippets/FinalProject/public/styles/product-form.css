@@ -60,3 +60,20 @@
     border-color: var(--color-error-300);
     background-color: var(--color-error-100);
 }
+
+/* Image Upload Control */
+
+#image-upload-control {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: left;
+    overflow: hidden;
+}
+
+#image-upload-control img {
+    display: none;
+    width: 15rem;
+    height: 6rem;
+    object-fit: cover;
+}

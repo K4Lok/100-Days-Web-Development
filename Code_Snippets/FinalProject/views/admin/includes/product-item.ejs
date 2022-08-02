@@ -1,4 +1,7 @@
-<div class="product-item">
+<div class="product-item scale">
+    <div class="btn-delete-wrapper">
+        <button class="btn-delete" data-product-id="<%= product.id %>" data-csrf-token="<%= locals.csrfToken %>">X</button>
+    </div>
     <img src="<%= product.imageUrl %>" alt="<%= product.name %>">
     <section class="product-details">
         <p class="product-name"><%= product.name %></p>

@@ -77,6 +77,16 @@ class Product {
         this.image = newImage;
         this.updateImageData();
     }
+
+    async remove() {
+        try {
+            const productId = new ObjectId(this.id);
+            await db.getDb().collection('products').deleteOne({_id: productId});
+        } catch(error) {
+            console.log(error);
+            throw new Error('Not able to delete product!');
+        }
+    }
 }
 
 module.exports = Product;

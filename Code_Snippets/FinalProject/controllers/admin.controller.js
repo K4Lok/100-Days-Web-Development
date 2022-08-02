@@ -64,10 +64,26 @@ async function updateProduct(req, res, next) {
     res.redirect('/admin/products');
 }
 
+async function deleteProduct(req, res, next) {
+    let product;
+
+    try {
+        product = new Product({...Product.findById(req.params.id), _id: req.params.id});
+        await product.remove();
+    } catch(error) {
+        return next(error);
+    }
+
+    res.json({
+        'message': 'delete sucessfully!'
+    })
+}
+
 module.exports = {
     getProducts: getProducts,
     getNewProduct: getNewProduct,
     createNewProduct: createNewProduct,
     getUpdateProduct: getUpdateProduct,
-    updateProduct: updateProduct
+    updateProduct: updateProduct,
+    deleteProduct: deleteProduct
 };
