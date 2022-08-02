@@ -78,3 +78,92 @@ deleteProductToggleElement.addEventListener('click', toggleDeleteProduct);
 
 ## Delete Function
 > Deleting comprises of two operations right here, 1) Delete it from the database and 2) Remove the Product Item in the current user screen without refreshing it with AJAX.
+### Delete Model
+> First of all, we need a function to delete the product in database in the Product Model, then we utilize this function in the controller with passing the product id in the path parameters.
+```js
+// models/Product.js
+
+class Product {
+  //...
+  
+  async remove() {
+    try {
+        const productId = new ObjectId(this.id);
+        await db.getDb().collection('products').deleteOne({_id: productId});
+    } catch(error) {
+        console.log(error);
+        throw new Error('Not able to delete product!');
+    }
+  }
+}
+```
+### Delete Controller
+> Now we handle the delete request.
+```js
+// controllers/admin.controller.js
+
+async function deleteProduct(req, res, next) {
+  let product;
+
+  try {
+      product = new Product({...Product.findById(req.params.id), _id: req.params.id});
+      await product.remove();
+  } catch(error) {
+      return next(error);
+  }
+
+  res.json({
+      'message': 'delete sucessfully!'
+  })
+}
+```
+
+# Important Notes
+> Since, we've implement the csrf token to protect from CSRF Attacks, therefore, for every requests, we need a csrf token to verify whether this request is valid or not. We need to pass the csrf token.
+```js
+// product-item.ejs
+
+<button class="btn-delete" data-product-id="<%= product.id %>" data-csrf-token="<%= locals.csrfToken %>">X</button>
+```
+
+### Finish the delete function
+> We send the delete request with JavaScript `fetch` with method `"DELETE"`.
+```js
+const deleteProductToggleElement = document.getElementById('delete-product-toggle');
+const deleteButtonElements = document.querySelectorAll('.btn-delete');
+
+const productItemElements = document.querySelectorAll('.product-item');
+
+async function deleteProduct(event) {
+    const buttonElement = event.target;
+    const productId = buttonElement.dataset.productId;
+    const csrfToken = buttonElement.dataset.csrfToken;
+
+    const response = await fetch('/admin/products/' + productId + '?_csrf=' + csrfToken, {
+        method: 'DELETE'
+    });
+
+    if(!response.ok) {
+        alert('Not able to delete!');
+        return;
+    }
+
+    buttonElement.parentElement.parentElement.parentElement.remove();
+}
+
+function toggleDeleteProduct(event) {
+    event.preventDefault();
+    deleteProductToggleElement.classList.toggle('pressed');
+    for(const deleteButtonElement of deleteButtonElements) {
+        deleteButtonElement.classList.toggle('show');
+        deleteButtonElement.addEventListener('click', deleteProduct);
+    }
+    for(const productItemElement of productItemElements) {
+        productItemElement.classList.toggle('scale');
+    }
+}
+
+deleteProductToggleElement.addEventListener('click', toggleDeleteProduct);
+```
+
+---
