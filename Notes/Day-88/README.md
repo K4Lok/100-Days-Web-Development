@@ -41,3 +41,61 @@ app.use(adminRoutes);
 
 ---
 
+# All Products Page
+> Here we have a page for the users to browse all the products we have. Behind the scenes, we query all the products from the model and pass the data to the view with the contoller.
+## Get All Product Controller
+```js
+// controllers/products.controller.js
+
+function getAllProducts(req, res, next) {
+  let products;
+  
+  try {
+    products = await Product.findAll();
+    
+  } catch(error) {
+    console.log(error);
+    next(error);
+    return;
+  }
+  
+  res.render('customer/products/all-products', {products: products});
+}
+```
+
+# Product Details Page
+> The product cards will be attached with a link lead to the product details page, in the mean time, we have to query the details from the database and pass it to the view.
+## Set up the controller
+```js
+// controllers/products.controller.js
+
+function getAllProducts(req, res, next) {
+  let products;
+  
+  try {
+    products = await new Product(await Product.findById(req.params.id));
+  } catch(error) {
+    console.log(error);
+    next(error);
+  }
+  
+  res.render('customer/products/product-details', {product: product});
+}
+```
+## The routes
+```js
+// routes/products.routes.js
+const productsController = require('../controllers/products.controller');
+
+router.get('/products', productsController.getAllProduct);
+
+router.get('/products/:id', productsController.getProductDetails);
+```
+
+---
+
+# Styling the Details Page
+## Showcase
+<img width="961" alt="Screenshot 2022-08-03 at 2 15 02 PM" src="https://user-images.githubusercontent.com/82365010/182616919-59d3ac92-dd26-41a5-95a2-c99f0e549151.png">
+
+---
