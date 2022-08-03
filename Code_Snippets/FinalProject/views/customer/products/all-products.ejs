@@ -1,11 +1,20 @@
-<%- include('../../shared/includes/head', { pageTitle: 'All Products' }) %>
+<%- include('../../shared/includes/head', { pageTitle: 'Manage Products' }) %>
 <link rel="stylesheet" href="/styles/forms.css">
-<link rel="stylesheet" href="/styles/auth.css">
+<link rel="stylesheet" href="/styles/product.css">
+<script src="/scripts/delete-product.js" defer></script>
 </head>
 <body>
     <%- include('../../shared/includes/header') %>
     <main>
-        <h1>All Products here</h1>
-        <p>A list of products...</p>
+        <h1>Out Prodtucs</h1>
+        <section class="products-showcase">
+            <ul class="products-grid">
+                <% for(const product of products) { %>
+                    <li>
+                        <%- include('../includes/product-item', {product: product}); %>
+                    </li>
+                <% } %>
+            </ul>
+        </section>
     </main>
 <%- include('../../shared/includes/footer'); %>

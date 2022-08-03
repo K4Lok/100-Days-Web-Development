@@ -8,14 +8,14 @@ async function deleteProduct(event) {
     const productId = buttonElement.dataset.productId;
     const csrfToken = buttonElement.dataset.csrfToken;
 
-    const response = await fetch('/admin/products/' + productId + '?_csrf=' + csrfToken, {
-        method: 'DELETE'
-    });
+    // const response = await fetch('/admin/products/' + productId + '?_csrf=' + csrfToken, {
+    //     method: 'DELETE'
+    // });
 
-    if(!response.ok) {
-        alert('Not able to delete!');
-        return;
-    }
+    // if(!response.ok) {
+    //     alert('Not able to delete!');
+    //     return;
+    // }
 
     buttonElement.parentElement.parentElement.parentElement.remove();
 }

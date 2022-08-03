@@ -1,0 +1,23 @@
+<%- include('../../shared/includes/head', { pageTitle: 'Manage Products' }) %>
+<link rel="stylesheet" href="/styles/forms.css">
+<link rel="stylesheet" href="/styles/widget-product.css">
+<script src="/scripts/delete-product.js" defer></script>
+</head>
+<body>
+    <%- include('../../shared/includes/header') %>
+    <main id="product-details-container">
+        <section id="image-wrapper">
+            <img src="<%= product.imageUrl %>" />
+        </section>
+        <section id="product-info-wrapper">
+        <h1><%= product.name %></h1>
+        <p>$<%= product.price %></p>
+        <p><%= product.summary %></p>
+        <p><%= product.description %></p>
+        </section>
+    </main>
+    <section class="btn-wrapper btn-group">
+        <button class="btn gray"><a href="/products">Go Back</a></button>
+        <button class="btn green">Add to Cart</button>
+    </section>
+<%- include('../../shared/includes/footer'); %>

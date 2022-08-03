@@ -27,6 +27,10 @@ h1 {
   color: var(--color-primary-title);
 }
 
+body {
+  margin-bottom: 10rem;
+}
+
 @media (min-width: 768px) {
 
 }
