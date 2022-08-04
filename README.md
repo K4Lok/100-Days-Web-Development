@@ -98,5 +98,6 @@ Web development is something what I want to try and mastery for a long time, her
 |Day 86|Final Project, Styling Product card, Managing w Model, Controller|[Link](https://github.com/ImK4Lok/100-Days-Web-Development/tree/main/Notes/Day-86)|1 Aug 2022|
 |Day 87|Final Project, Image Preview, Delete Request for Product, AJAX|[Link](https://github.com/ImK4Lok/100-Days-Web-Development/tree/main/Notes/Day-87)|2 Aug 2022|
 |Day 88|Final Project, Protect Routes, Error Handling, Get Products & Details|[Link](https://github.com/ImK4Lok/100-Days-Web-Development/tree/main/Notes/Day-88)|3 Aug 2022|
+|Day 89|Final Project, Cart styleing Badge, Model, Middleware, Controller|[Link](https://github.com/ImK4Lok/100-Days-Web-Development/tree/main/Notes/Day-89)|4 Aug 2022|
 
 <!-- |Day | |[Link](https://github.com/ImK4Lok/100-Days-Web-Development/tree/main/Notes/Day-)| May 2022| -->
