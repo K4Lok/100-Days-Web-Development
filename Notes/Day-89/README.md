@@ -113,3 +113,16 @@ module.exports = {
 ```
 
 ---
+
+# Use the Middlewares and the Routes
+```js
+// app.js
+const cartMiddleware = require('./middlewares/check-cart');
+const cartRoutes = require('./routes/cart.routes.js');
+
+//...
+app.use(express.json());
+app.use(cartMiddleware);
+
+app.use('/cart', cartRoutes);
+```
