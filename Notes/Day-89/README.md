@@ -5,6 +5,36 @@
 ## Showcase
 <img width="600" src="https://user-images.githubusercontent.com/82365010/182866574-e2ec88b6-9e72-4b47-923f-a34e1abad63d.png">
 
+---
+
+# Cart Middleware
+> Since, we want to access our cart dataset in every view so that the navigation bar is able to show the quantity. Thus, we're saving the cart into the res.locals. We will need the help of middleware.
+```js
+// middlewares/check-cart.js
+
+const Cart = require('../models/Cart');
+
+function initializeCart(req, res, next) {
+  let cart;
+  
+  if(!req.session.cart) {
+    cart = new Cart();
+  }
+  else {
+    sessionCart = req.session.cart;
+    cart = new Cart(sessionCart.items, sessionCart.totalQuantity, sessionCart.totalPrice);
+  }
+  
+  res.locals.cart = cart;
+  
+  next();
+}
+
+module.exports = initializeCart;
+```
+
+---
+
 # Cart Model
 > We need a model for manipulating the data and a more structured dataset.
 ```js
@@ -46,6 +76,8 @@ class Cart {
 module.exports = Cart;
 ```
 
+---
+
 # Cart Controller
 > Here we handle the post request of adding cart item that will be set up later with AJAX.
 ```js
@@ -80,3 +112,4 @@ module.exports = {
 };
 ```
 
+---
