@@ -1,7 +1,7 @@
-<%- include('../../shared/includes/head', { pageTitle: 'Manage Products' }) %>
+<%- include('../../shared/includes/head', { pageTitle: product.name }) %>
 <link rel="stylesheet" href="/styles/forms.css">
 <link rel="stylesheet" href="/styles/widget-product.css">
-<script src="/scripts/delete-product.js" defer></script>
+<script src="/scripts/cart-management.js" defer></script>
 </head>
 <body>
     <%- include('../../shared/includes/header') %>
@@ -17,7 +17,7 @@
         </section>
     </main>
     <section class="btn-wrapper btn-group">
-        <button class="btn gray"><a href="/products">Go Back</a></button>
-        <button class="btn green">Add to Cart</button>
+        <button onclick="location.href='/products'" type="button" class="btn gray">Go Back</button>
+        <button id="add-to-cart" class="btn green" data-product-id="<%= product.id %>" data-csrf="<%= locals.csrfToken %>">Add to Cart</button>
     </section>
 <%- include('../../shared/includes/footer'); %>

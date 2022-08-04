@@ -31,6 +31,22 @@ body {
   margin-bottom: 10rem;
 }
 
+.badge {
+  background-color: var(--color-primary-700);
+  font-size: 0.7rem;
+  font-weight: 600;
+  width: 1.2rem;
+  height: 1.2rem;
+  line-height: 1.2rem;
+  text-align: center;
+  vertical-align: center;
+  border-radius: 50%;
+  position: absolute;
+  top: -0.5rem;
+  right: -0.7rem;
+  z-index: -1;
+}
+
 @media (min-width: 768px) {
 
 }
