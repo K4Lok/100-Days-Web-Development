@@ -1,0 +1,10 @@
+<li class="cart-item">
+    <div class="card-left">
+        <p class="item-name"><%= cartItem.product.name %></p>
+        <p class="item-price-block">$<%= cartItem.totalPrice %><span class="item-price"> ($<%= cartItem.product.price %>)</span></p>
+    </div>
+    <div class="card-right">
+        <input type="number" value="<%= cartItem.quantity %>" min="0"/>
+        <button class="btn btn-update" data-product-id="<%= cartItem.product.id %>" data-csrf="<%= locals.csrfToken %>">Update</button>
+    </div>
+</li>

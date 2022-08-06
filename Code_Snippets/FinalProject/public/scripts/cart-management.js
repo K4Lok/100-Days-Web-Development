@@ -6,27 +6,6 @@ async function addToCart(event) {
     const csrfToken = event.target.dataset.csrf;
 
     let response;
-    // fetch('/cart/items', {
-    //     method: 'POST',
-    //     headers: {
-    //         'Content-Type': 'application/json'
-    //     },
-    //     body: JSON.stringify({
-    //         productId: productId,
-    //         _csrf: csrfToken
-    //     })
-    // })
-    // .then(res => {
-    //     if(!res.ok) {
-    //         alert(`${res.status}`);
-    //     }
-    //     return res.text();
-    // })
-    // .then(text => console.log(text))
-    // .catch(error => {
-    //     console.error(error);
-    // });
-
 
     try {
         response = await fetch('/cart/items', {
