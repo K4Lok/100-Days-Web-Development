@@ -36,8 +36,8 @@ function updateCartItem(req, res) {
         message: 'Item updated!',
         updatedCartData: {
             newTotalQuantity: cart.totalQuantity,
-            newTotalPrice: cart.totalPrice,
-            updatedItemPrice: updatedItemData.updatedItemPrice
+            newTotalPrice: +cart.totalPrice.toFixed(2),
+            updatedItemPrice: +updatedItemData.updatedItemPrice
         }
     });
 }

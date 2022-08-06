@@ -1,7 +1,7 @@
 <li class="cart-item">
     <div class="card-left">
-        <p class="item-name"><%= cartItem.product.name %></p>
-        <p class="item-price-block">$<%= cartItem.totalPrice %><span class="item-price"> ($<%= cartItem.product.price %>)</span></p>
+        <a href="/products/<%= cartItem.product.id %>"><p class="item-name"><%= cartItem.product.name %></p></a>
+        <p class="item-price-block">$<span class="total-item-price"><%= cartItem.totalPrice %></span><span class="item-price"> ($<%= cartItem.product.price %>)</span></p>
     </div>
     <div class="card-right">
         <input type="number" value="<%= cartItem.quantity %>" min="0"/>
