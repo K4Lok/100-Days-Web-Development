@@ -53,3 +53,117 @@ for(const updateBtnElement of updateBtnElements) {
 }
 ```
 
+---
+
+# Create Order Model
+> Within the Order Model, we stored the cart data, user data, and date of when the order is created.
+```js
+// models/Order.js
+
+const db = require('../data/database');
+
+class Order {
+    // Status => pending, fulfilled, cancelled
+    constructor(cart, userData, status = 'pending', date, orderId) {
+        this.productData = cart;
+        this.userData = userData;
+        this.status = status;
+        this.date = new Date(date);
+        if(this.date) {
+            this.formattedDate = this.date.toLocaleDateString('en-US', {
+                weekday: 'short',
+                day: 'numeric',
+                month: 'long',
+                year: 'numeric'
+            });
+        }
+        this.id = orderId;
+    }
+
+    save() {
+        if(this.id) {
+            // updating
+        }
+        else {
+            // add new data
+
+            const orderDocument = {
+                userData: this.userData,
+                productData: this.productData,
+                date: new Date(),
+                status: this.status
+            };
+
+            return db.getDb().collection('orders').insertOne(orderDocument);
+        }
+    }
+}
+
+module.exports = Order;
+```
+
+---
+
+# Order Controller
+> The handle the post request for creating new order, and get request for showing the existing orders fetch from the database.
+```js
+// controllers/order.controller.js
+
+const Order = require('../models/Order');
+const User = require('../models/User');
+
+async function getOrders(req, res, next) {
+    res.render('customer/orders/all-orders');
+}
+
+async function addOrder(req, res, next) {
+    const cart = res.locals.cart;
+
+    let userDocument;
+    try {
+        userDocument = await User.findById(res.locals.uid);
+    }
+    catch(error) {
+        next(error);
+    }
+    
+    const order = new Order(cart, userDocument);
+
+    try {
+        order.save();
+    }
+    catch(error) {
+        next(error);
+        return;
+    }
+
+    req.session.cart = null;
+
+    res.redirect('/orders');
+}
+
+module.exports = {
+    getOrders: getOrders,
+    addOrder: addOrder,
+};
+```
+
+---
+
+# Order Routes
+```js
+// routes/order.routes.js
+
+const express = require('express');
+const orderController = require('../controllers/order.controller');
+
+const router = express.Router();
+
+router.get('/', orderController.getOrders);
+
+router.post('/new-order', orderController.addOrder);
+
+module.exports = router;
+```
+
+---
