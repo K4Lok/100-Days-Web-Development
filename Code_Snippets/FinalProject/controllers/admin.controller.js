@@ -1,4 +1,5 @@
 const Product = require('../models/Product');
+const Order = require('../models/Order');
 
 async function getProducts(req, res, next) {
     let products;
@@ -79,11 +80,44 @@ async function deleteProduct(req, res, next) {
     })
 }
 
+async function getOrders(req, res) {
+    try {
+        const orders = await Order.findAll();
+        res.render('admin/orders/admin-orders', {
+          orders: orders
+        });
+      } catch (error) {
+        next(error);
+      }
+}
+
+async function updateOrders(req, res, next) {
+    const orderId = req.params.id;
+    const newStatus = req.body.newStatus;
+
+    console.log(orderId);
+  
+    try {
+      const order = await Order.findById(orderId);
+      console.log(order);
+  
+      order.status = newStatus;
+  
+      await order.save();
+  
+      res.json({ message: 'Order updated', newStatus: newStatus });
+    } catch (error) {
+      next(error);
+    }
+}
+
 module.exports = {
     getProducts: getProducts,
     getNewProduct: getNewProduct,
     createNewProduct: createNewProduct,
     getUpdateProduct: getUpdateProduct,
     updateProduct: updateProduct,
-    deleteProduct: deleteProduct
+    deleteProduct: deleteProduct,
+    getOrders: getOrders,
+    updateOrders: updateOrders
 };
