@@ -34,6 +34,7 @@ npm install stripe
 const stripe = require('stripe')("sk_test_your-secret-key);
 ```
 3. create transaction
+> Here's the [documentation](https://stripe.com/docs/payments/accept-a-payment?platform=web) for quick start.
 ```js
 // controllers.order.controller.js
 
