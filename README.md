@@ -104,5 +104,6 @@ Web development is something what I want to try and mastery for a long time, her
 |Day 92|Final Project, Finsh the Project, Order MVC, AJAX update view|[Link](https://github.com/ImK4Lok/100-Days-Web-Development/tree/main/Notes/Day-92)|7 Aug 2022|
 |Day 93|Services & APIs, Stripe, add Stripe API to the Final Project|[Link](https://github.com/ImK4Lok/100-Days-Web-Development/tree/main/Notes/Day-93)|8 Aug 2022|
 |Day 94|Deploy Website, Static & Dynamic, Database Server, Testing, SEO|[Link](https://github.com/ImK4Lok/100-Days-Web-Development/tree/main/Notes/Day-94)|9 Aug 2022|
+|Day 95|Deploy Website, Optimize Website Performance, APIs, Services|[Link](https://github.com/ImK4Lok/100-Days-Web-Development/tree/main/Notes/Day-95)|10 Aug 2022|
 
 <!-- |Day | |[Link](https://github.com/ImK4Lok/100-Days-Web-Development/tree/main/Notes/Day-)| May 2022| -->
