@@ -4,8 +4,16 @@
 ## Todo Management
 > An application that allow user to CREATE, READ, UPDATE, DELETE their own todos.
 
+## Postman
+> It's a designed tool for testing API, it's an HTTP client that tests HTTP requests.
+1. Select Raw and add JSON for setting header as `application/json`
+2. Attach json data inside body with double quotes embraced
+3. Send it to see if there's any issues
+
 ## Notes
-### WHen documents sucessfully created, mongodb returns a object that contain the Objectid of that documents.
+
+### Mongodb Return Object
+> When documents sucessfully created, mongodb returns a object that contain the Objectid of that documents.
 ```js
 // models/Todo.js
 
@@ -23,7 +31,7 @@ async function addTodo(req, res, next) {
   let insertedId;
   try {
     const result = await todo.save();
-    insertedId = result.insertId;
+    insertedId = result.insertedId;
   }
   catch(error) {
     next(error);
@@ -39,7 +47,6 @@ async function addTodo(req, res, next) {
 }
 
 ```
-
 
 ---
 
