@@ -50,4 +50,13 @@ async function addTodo(req, res, next) {
 
 ---
 
-# Decoupled Frontend
+# Decoupled Web Architecture
+> It means the codes of front end and back end are seperated, with no shared resources. Normally the backend side will provide data and allow frontend to manipulate the data via API with format like JSON.
+
+## Advantage of Decoupled Architecture
+> The advantages of seperating the frontend and backend are as follows:
+1. Don't require an expert on full-stack to build up a web application
+2. More innovative with not neccessarily be only one tech stack, enable diverse tech stack
+3. With the way of providing data (APIs), it can be used in many devices, not only based on browser
+
+---
