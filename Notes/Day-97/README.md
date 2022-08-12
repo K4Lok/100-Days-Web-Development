@@ -60,3 +60,20 @@ async function addTodo(req, res, next) {
 3. With the way of providing data (APIs), it can be used in many devices, not only based on browser
 
 ---
+
+# CORS
+> CORS stands for Cross-Origin Resource Sharing, it's a server standard that controls whether receiving requests from others beside the original domains or not.
+## Configure CORS in express.js
+> Even tho express has its own CORS middleware, but we can still create our own to understand it under the hood.
+```js
+// middlewares/cors.js
+
+function enableCORS(req, res, next) {
+  res.setHeader('Access-Control-Allow-Origin', '*");
+  res.setHeader('Access-Control-Allow-Methods', 'GET,POST,PATCH,DELETE,OPTIONS");
+  res.setHeader('Access-Control-Allow-Headers', 'Content-Type");
+  next();
+}
+```
+
+---
