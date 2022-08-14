@@ -9,11 +9,13 @@ There're some common used built-in directives like `v-on`, `v-for`, and `v-if` f
 
 We can alos build our own custom directives if the built-in directives don't meet our needs.
 
+---
+
 ## Handling Events
 ### Binding a event listener
 > As we've mentioned the directives' functionality, it can also help with handling element event with the directive `v-on`, 
 which we can also make it shorter with the shorthand symbol `@` instead of `v-on:`
-```js
+```vue
 <button v-on:click="clickHandler"></button>
 // or
 <button @click="clickHandler"></button>
@@ -36,9 +38,26 @@ const MyApp = {
 };
 ```
 
+---
+
+## Display Element Conditionally
+> It's common that we want to display different content based on whether the dynamic data is existed or not, here we can use the `v-if` and `v-else` directives to display or not based on the condition.
+
+```vue
+<section id="todos">
+  <p v-if="todos.length === 0">No todos added yet - maybe start adding some?</p>
+  <ul v-else id="todos-list">
+  //...
+  </ul>
+</section>
+```
+Here just keep in mind the if else directives must be direct sibling elements.
+
+---
+
 ## List Rendering
 > This come to place when we want to generate and display dynamic list of data in the view, vue uses the `v-for` directive to iterate through an array and render a list. And this directive requires a special syntax in the form of `item in items`.
-```js
+```vue
 <section>
   <ul>
     <li v-for="item in items">
@@ -47,3 +66,26 @@ const MyApp = {
   </ul>
 </section>
 ```
+
+## Update and Delete Data
+> Vue will help us to manipulate the DOM behind the scenes based on the content of the array, it will add new element when the array is pushed, and delete element when the content of the array is removed.
+
+So if we delete the content inside an array, vue will help us remove the elements in the DOM, and of course the elements must be render by an array with directive `v-for`.
+
+Here's a Delete Todo example:
+```vue
+<button @click="deleteTodo(todo.id)">Delete</button>
+```
+```js
+//...
+  methods: {
+    //...
+    deleteTodo(todoId) {
+      this.todos = this.todos.filter( todoItem = > {
+        return todoItem.id !== todoId;
+      });
+    }
+  }
+```
+
+---
