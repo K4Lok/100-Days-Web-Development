@@ -108,5 +108,6 @@ Web development is something what I want to try and mastery for a long time, her
 |Day 96|RESTful API, Build a simple GET Request RESTful API|[Link](https://github.com/ImK4Lok/100-Days-Web-Development/tree/main/Notes/Day-96)|11 Aug 2022|
 |Day 97|Complex REST API, Decoupled Web Architecture, Configure CORS|[Link](https://github.com/ImK4Lok/100-Days-Web-Development/tree/main/Notes/Day-97)|12 Aug 2022|
 |Day 98|Frontend JavaScript Frameworks, Vue.js, String Interpolation|[Link](https://github.com/ImK4Lok/100-Days-Web-Development/tree/main/Notes/Day-98)|13 Aug 2022|
+|Day 99|Vue.js, Directives, Events Handling, List Rendering, Conditioning|[Link](https://github.com/ImK4Lok/100-Days-Web-Development/tree/main/Notes/Day-99)|14 Aug 2022|
 
 <!-- |Day | |[Link](https://github.com/ImK4Lok/100-Days-Web-Development/tree/main/Notes/Day-)| May 2022| -->
