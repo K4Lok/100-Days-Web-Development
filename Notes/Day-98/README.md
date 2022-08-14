@@ -17,3 +17,43 @@ And when we're using the frontend framework, it's more likely we're using the de
 
 ---
 
+## 3 Most Popular Frameworks
+1. React
+2. Vue
+3. Angular
+
+# Vue.js
+> Here we will try vue to see the differences between a framework and vanilla JavaScript.
+
+## Set up Vue.js
+> There're [ways](https://vuejs.org/guide/quick-start.html#with-build-tools) of getting vue into the project. 1) Initialize and install the vue packages into your project directory. 2) Get the vue package via CDN.
+
+## Quick Start
+> It's much more clear and simple to use vue.js instead of vanilla JavaScript.
+
+A todo app for example:
+```js
+// app.js
+import { createApp } from 'vue'
+
+const TodoApp = {
+  data() {
+    return {
+      newTodoText: 'Testing'
+    };
+  }
+};
+
+// of coz we need the container id to manipulate the DOM element
+createApp(TodoApp).mount('#todo-app');
+```
+
+## String Interpolation
+> When we were leanring node.js, they got the template engine to replace some keyword in the template with variable that passed in. And almost every framework has similar mechanism to do so.
+```js
+<div id="todo-app">
+  <h1>{{ newTodoText }}</h1>
+</div>
+```
+
+---
