@@ -89,3 +89,38 @@ Here's a Delete Todo example:
 ```
 
 ---
+
+## Fetching Data from DB
+> The approach of fetching is the same with vanilla JavaScript, except vue has a life cycle, where it will execute functions in different stages during the start of vue taking control of the DOM to the end of its operation.
+
+We're going to fetch the data from the DB when the Vue instance is created with property `created` inside the vue object.
+```js
+const TodoApp = {
+  // data() {...}
+  // methods: ...,
+  created() {
+    let response;
+    try {
+      response = await fetch('http://localhost:3000/todo');
+    }
+    catch(error) {
+      alert(error);
+      return;
+    }
+    
+    if(!response.ok) {
+      alert(response.error);
+      return;
+    }
+    
+    const responseData = await response.json();
+    const todos = responseData.todos;
+    
+    this.todos = todos;
+  }
+};
+```
+
+This will initialize the todos array with existing todos from the database once the Vue instance is created, so that we can get the data from the database as early as possible.
+
+---
