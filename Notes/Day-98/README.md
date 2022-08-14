@@ -56,4 +56,34 @@ createApp(TodoApp).mount('#todo-app');
 </div>
 ```
 
+## Listening to Events and Two-Way-Binding
+> Adding Event Listening is much more easier in Vue, we just need to add a `@` with the name of the event we want to handle. And for two-way-binding, either way of used place changed, the other will be changed as well.
+```js
+<div ...>
+  // here we can have an inline function as well, not necessarily has to be a function
+  <form @click="addTodo">
+    <input type="text" id="text" v-model="newTodoText" required/>
+  </form>
+</div>
+```
+```js
+// app.js
+
+const TodoApp = {
+  data() {
+    return {
+      newTodoText: '',
+      enteredText: '',
+    };
+  },
+  methods: {
+    addTodo(event) {
+      event.preventDefault();
+      this.newTodoText: this.enteredText;
+      this.enteredText = '';
+    }
+  }
+};
+```
+
 ---
