@@ -5,7 +5,7 @@
 > They're instructions (element attribute) for Vue.js that link with DOM element to do things in a certain way. It's prefixed by the clause `v-`
 which helps the framework to know it's a special type of syntax used for performing some tasks.
 
-There're some common used built-in directives like `v-if`, `v-for`, and `v-on` for example. These directives are highly enhanced the development process.
+There're some common used built-in directives like `v-on`, `v-for`, and `v-if` for example. These directives are highly enhanced the development process.
 
 We can alos build our own custom directives if the built-in directives don't meet our needs.
 
@@ -36,3 +36,14 @@ const MyApp = {
 };
 ```
 
+## List Rendering
+> This come to place when we want to generate and display dynamic list of data in the view, vue uses the `v-for` directive to iterate through an array and render a list. And this directive requires a special syntax in the form of `item in items`.
+```js
+<section>
+  <ul>
+    <li v-for="item in items">
+      <p>{{ item.title }}</p>
+    </li>
+  </ul>
+</section>
+```
