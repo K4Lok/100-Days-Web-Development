@@ -1,5 +1,5 @@
 # The end of 100 Days
-> This is the end of the 100 Days web development learning process. I'm learning anything new today, just do a overview or rewind on what I've learn in general.
+> This is the end of the 100 Days web development learning process. I'm not learning anything new today, just do a overview or rewind on what I've learnt in general.
 
 ---
 
@@ -31,5 +31,16 @@ it makes complex project and large scale code based project more stuctural and m
 Like vanilla JavaScript for frontend development, when we use node.js for backend development, we should consider using a framework like express.js to simpify 
 our development period. Not only increasing the speed, but also makes the code more clean and organized. Regardless of you're working on your own or working as a team, 
 we all need a common shared framework to help us recognized the code from the others.
+
+---
+
+## AJAX
+AJAX stands for Asynchronous Javascript And XML, when we want to display some data changed after some user actions in the past, we need to refresh the webpage in order to do it. But with AJAX emerged, we can do fetch data and display it from the client-side Javascript. Which really enhance the user experience to interact with your website.
+
+## JSON
+JSON is an open standard format for data interchange over the network, machine can generate and parse easily, so as human. This is not exclusively for Javascript, almost every language has its way to parse JSON data. Therefore, JSON is widely used over the internet for serving data. The most commonly used case is the API.
+
+## Node/Express.js
+> Before diving into express.js, node.js is also a crucial tool for backend server. Node.js has became very popular in this few years, thanks for the large scale of JavaScript community, JavaScript was a frontend exclusive language in the past. 
 
 ---
